@@ -38,7 +38,7 @@ create table user (
   major string not null,
   character not null,
   strength string,
-  text selfInfo,
+  selfInfo text,
   avator string
 );
 ```
