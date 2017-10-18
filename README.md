@@ -1,7 +1,7 @@
 # WeParing
 *ming zhang*
 
-# Android
+# Python
 
 # Back end
 ### 需要
