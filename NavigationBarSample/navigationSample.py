@@ -3,7 +3,7 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 
-manager = Manager(app)
+# manager = Manager(app)
 bootstrap = Bootstrap(app)
 
 
