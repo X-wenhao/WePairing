@@ -4,7 +4,14 @@
 
 {% block page_content %}
 <div class="page-header">
+    <h3>安装组件和运行</p>
+    <p>pip3 install flask</p>
     <p>pip3 install flask_bootstrap</p>
     <p>python3 navigationSample.py</p>
+    <h3>介绍</h3>
+    <p>base.html: 导航栏的基础组件所在文件，其他所有html需要 {% extends "base.html" %} 获得导航栏</p>
+    <p>404.html, 500.html: 自定义client，server出错页面</p>
+    <p>index.html: 主页面</p>
+    <p>user.html: 用户页面，可在主页面修改href</p>
 </div>
 {% endblock %}
