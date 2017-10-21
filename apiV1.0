@@ -1,0 +1,151 @@
+用户注册
+POST /api/V1.0/user/register
+{
+    mail:str,
+    password:str,
+    verification_code:int
+}
+return
+{
+    result:int  //成功返回1,否则返回0
+}
+
+用户登录
+GET /api/V1.0/user/login
+{
+    mail:str,
+    password:str
+}
+return
+{
+    result:int  //成功返回1,否则返回0
+}
+
+登录后设置用户信息
+POST /api/V1.0/user/set_info？mail=
+{
+    name:str,
+    school:str,
+    grade:str,
+    major:str,
+    gender:str,  //man or woman
+    good_at:str,  //以空格分隔如：“数学 英语 语文”
+    description:str,
+    phone_num:int
+    //icon:       //待定
+}
+return
+{
+    result:int    //是否设置成功
+}
+
+获取用户信息
+GET /api/V1.0/user/get_info?name=
+return
+{
+    name:str,
+    school:str,
+    grade:str,
+    major:str,
+    gender:str,  //man or woman
+    good_at:str,  //以空格分隔如：“数学 英语 语文”
+    description:str,
+    phone_num:int,
+    //icon:
+}
+
+获取用户速配信息（速配记录，发布的速配单及状况）
+//待定
+
+发布速配
+POST /api/V1.0/quick_pairs/release_pair?name=
+{
+    time:str,   //以‘~’分隔如：12:30~13:30  
+    people_min:int,
+    people_max:int,
+    location:str
+}
+return
+{
+    result:int
+}
+
+返回速配结果(用户信息)
+GET /api/V1.0/quick_pairs/get_users?name=
+return
+[
+    {
+        name:str,
+        school:str,
+        grade:str,
+        major:str,
+        gender:str,  //man or woman
+        good_at:str,  //以空格分隔如：“数学 英语 语文”
+        description:str,
+        phone_num:int,
+        //icon:
+    },
+    {}
+]
+
+发送用户是否认可速配结果
+POST /api/V1.0/quick_pairs/send_result?name=&result=
+
+配对墙发布配对
+POST /api/V1.0/pairs/release_pair?name=
+{
+    type:str,
+    time:str,   //以‘~’分隔如：12:30~13:30  
+    title:str,
+    description:str
+}
+return
+{
+    result:int
+}
+
+获取配对墙所有配对
+GET /api/V1.0/pairs/get_pairs
+return
+[
+    {
+        id:int,     //配对唯一标识
+        time:str,
+        type:str,
+        name:str,
+        title:str
+    }
+]
+
+获取单个配对信息
+GET /api/V1.0/pairs/get_pair?id=
+return
+{
+    id:int,
+    time:str,
+    type:str,
+    title:str,
+    description:str,
+    name:str,
+    people_num:int  //已达成人数
+}
+
+获取申请人列表
+GET /api/V1.0/pairs/get_users?id=
+return
+[
+    {
+        name:str,
+        school:str,
+        grade:str,
+        major:str,
+        gender:str,  //man or woman
+        good_at:str,  //以空格分隔如：“数学 英语 语文”
+        description:str,
+        phone_num:int,
+        //icon:
+    },
+    {}
+]
+
+
