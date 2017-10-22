@@ -10,6 +10,9 @@ return
     result:int  //成功返回1,否则返回0
 }
 
+发送邮件
+POST /api/V1.0/user/send_mail?mail=
+
 用户登录
 GET /api/V1.0/user/login
 {
