@@ -34,7 +34,7 @@ POST /api/V1.0/user/set_info？mail=
     gender:str,  //man or woman
     good_at:str,  //以空格分隔如：“数学 英语 语文”
     description:str,
-    phone_num:int
+    connection:str,   //联系方式
     //icon:       //待定
 }
 return
