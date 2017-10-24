@@ -53,7 +53,7 @@ return
     gender:str,  //man or woman
     good_at:str,  //以空格分隔如：“数学 英语 语文”
     description:str,
-    phone_num:int,
+    connection:str,
     //icon:
 }
 
@@ -85,7 +85,7 @@ return
         gender:str,  //man or woman
         good_at:str,  //以空格分隔如：“数学 英语 语文”
         description:str,
-        phone_num:int,
+        connection:str,
         //icon:
     },
     {}
@@ -145,10 +145,11 @@ return
         gender:str,  //man or woman
         good_at:str,  //以空格分隔如：“数学 英语 语文”
         description:str,
-        phone_num:int,
+        connection:str,
         //icon:
     },
     {}
 ]
 
+PS:有什么需要或者问题可以改.....
 
