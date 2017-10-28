@@ -127,7 +127,8 @@ return
 }
 
 获取配对墙所有配对
-GET /api/V1.0/pairs/get_pairs
+GET /api/V1.0/pairs/get_pairs?type=
+PS:不指定type则查询所有配对
 return
 [
     {
@@ -176,3 +177,5 @@ POST /api/V1.0/pairs/send_result?id=
     result:int
 }
 
+申请加入
+POST /api/V1.0/pairs/apply?id=&applicant_name=
