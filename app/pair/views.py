@@ -119,5 +119,17 @@ def api_get_pairs():
         re.append(dict(zip(keys,list(row))))
     return jsonify(re)
 
-@pair.route('/api/V1.0/pairs/get_pairs',methods=['GET'])
+@pair.route('/api/V1.0/pairs/get_pair',methods=['GET'])
+def api_get_pair():
+    id=request.args.get('id')
+    if not id:
+        return {'result':0}
+    sql='select id,type,title,description,name,agreed_persons from pairs where id='+id
+    db=sqlite3.connect(dbdir)
+    data=list(db.execute(sql).fetchone())
+    keys=['id','type','title','description','name']
+    re=dict(zip(keys,data[:-1]))
+    re['people_num']=len(data[-1].split())
+    return jsonify(re)
+
 

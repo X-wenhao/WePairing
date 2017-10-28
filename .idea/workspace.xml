@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f975a5ef-5526-408a-be07-d62b2dfb2f8d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.db" afterPath="$PROJECT_DIR$/data.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AUnet_财务公开系统/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AUnet_财务公开系统/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/WeParing.iml" afterPath="$PROJECT_DIR$/.idea/WeParing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apiV1.0" afterPath="$PROJECT_DIR$/apiV1.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/auth/views.py" afterPath="$PROJECT_DIR$/app/auth/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pair/views.py" afterPath="$PROJECT_DIR$/app/pair/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../flasky/app/templates/base.html" afterPath="$PROJECT_DIR$/../flasky/app/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,14 +24,14 @@
               <caret line="100" column="27" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="27" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1508848736376" expanded="true" signature="590:612" ph="select * fro... users" />
-                <marker date="1508848736376" expanded="true" signature="590:624" ph="select mail users" />
-                <marker date="1508848736376" expanded="true" signature="590:626" ph="select mail users" />
-                <marker date="1508848736376" expanded="true" signature="805:850" ph="insert into users... " />
-                <marker date="1508848736376" expanded="true" signature="1874:1912" ph="select passw... users" />
-                <marker date="1508848736376" expanded="true" signature="1874:1914" ph="select passw... users" />
-                <marker date="1508848736376" expanded="true" signature="2645:2661" ph="update users... " />
-                <marker date="1508848736376" expanded="true" signature="3278:3369" ph="select name,... " />
+                <marker date="1509200125255" expanded="true" signature="590:612" ph="select * fro... users" />
+                <marker date="1509200125255" expanded="true" signature="590:624" ph="select mail users" />
+                <marker date="1509200125255" expanded="true" signature="590:626" ph="select mail users" />
+                <marker date="1509200125255" expanded="true" signature="805:850" ph="insert into users... " />
+                <marker date="1509200125255" expanded="true" signature="1874:1912" ph="select passw... users" />
+                <marker date="1509200125255" expanded="true" signature="1874:1914" ph="select passw... users" />
+                <marker date="1509200125255" expanded="true" signature="2645:2661" ph="update users... " />
+                <marker date="1509200125255" expanded="true" signature="3278:3369" ph="select name,... " />
               </folding>
             </state>
           </provider>
@@ -64,14 +60,15 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/pair/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="116" column="35" lean-forward="false" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+            <state relative-caret-position="883">
+              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1509198622451" expanded="true" signature="1496:1587" ph="select name,... " />
-                <marker date="1509198622451" expanded="true" signature="2534:2612" ph="insert into quick_pairs... " />
-                <marker date="1509198622451" expanded="true" signature="3218:3292" ph="insert into pairs... " />
-                <marker date="1509198622451" expanded="true" signature="3521:3558" ph="select * fro... pairs" />
+                <marker date="1509200751586" expanded="true" signature="1496:1587" ph="select name,... " />
+                <marker date="1509200751586" expanded="true" signature="2534:2612" ph="insert into quick_pairs... " />
+                <marker date="1509200751586" expanded="true" signature="3218:3292" ph="insert into pairs... " />
+                <marker date="1509200751586" expanded="true" signature="3521:3558" ph="select * fro... pairs" />
+                <marker date="1509200751586" expanded="true" signature="4009:4082" ph="select id,ty... pairs" />
               </folding>
             </state>
           </provider>
@@ -288,14 +285,14 @@
           <caret line="12" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1508848736376" expanded="true" signature="590:612" ph="select * fro... users" />
-            <marker date="1508848736376" expanded="true" signature="590:624" ph="select mail users" />
-            <marker date="1508848736376" expanded="true" signature="590:626" ph="select mail users" />
-            <marker date="1508848736376" expanded="true" signature="805:850" ph="insert into users... " />
-            <marker date="1508848736376" expanded="true" signature="1874:1912" ph="select passw... users" />
-            <marker date="1508848736376" expanded="true" signature="1874:1914" ph="select passw... users" />
-            <marker date="1508848736376" expanded="true" signature="2645:2661" ph="update users... " />
-            <marker date="1508848736376" expanded="true" signature="3278:3369" ph="select name,... " />
+            <marker date="1509200125255" expanded="true" signature="590:612" ph="select * fro... users" />
+            <marker date="1509200125255" expanded="true" signature="590:624" ph="select mail users" />
+            <marker date="1509200125255" expanded="true" signature="590:626" ph="select mail users" />
+            <marker date="1509200125255" expanded="true" signature="805:850" ph="insert into users... " />
+            <marker date="1509200125255" expanded="true" signature="1874:1912" ph="select passw... users" />
+            <marker date="1509200125255" expanded="true" signature="1874:1914" ph="select passw... users" />
+            <marker date="1509200125255" expanded="true" signature="2645:2661" ph="update users... " />
+            <marker date="1509200125255" expanded="true" signature="3278:3369" ph="select name,... " />
           </folding>
         </state>
       </provider>
@@ -338,10 +335,11 @@
           <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509198622451" expanded="true" signature="1496:1587" ph="select name,... " />
-            <marker date="1509198622451" expanded="true" signature="2534:2612" ph="insert into quick_pairs... " />
-            <marker date="1509198622451" expanded="true" signature="3218:3292" ph="insert into pairs... " />
-            <marker date="1509198622451" expanded="true" signature="3521:3558" ph="select * fro... pairs" />
+            <marker date="1509200751586" expanded="true" signature="1496:1587" ph="select name,... " />
+            <marker date="1509200751586" expanded="true" signature="2534:2612" ph="insert into quick_pairs... " />
+            <marker date="1509200751586" expanded="true" signature="3218:3292" ph="insert into pairs... " />
+            <marker date="1509200751586" expanded="true" signature="3521:3558" ph="select * fro... pairs" />
+            <marker date="1509200751586" expanded="true" signature="4009:4082" ph="select id,ty... pairs" />
           </folding>
         </state>
       </provider>
@@ -432,14 +430,14 @@
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1508848736376" expanded="true" signature="590:612" ph="select * fro... users" />
-            <marker date="1508848736376" expanded="true" signature="590:624" ph="select mail users" />
-            <marker date="1508848736376" expanded="true" signature="590:626" ph="select mail users" />
-            <marker date="1508848736376" expanded="true" signature="805:850" ph="insert into users... " />
-            <marker date="1508848736376" expanded="true" signature="1874:1912" ph="select passw... users" />
-            <marker date="1508848736376" expanded="true" signature="1874:1914" ph="select passw... users" />
-            <marker date="1508848736376" expanded="true" signature="2645:2661" ph="update users... " />
-            <marker date="1508848736376" expanded="true" signature="3278:3369" ph="select name,... " />
+            <marker date="1509200125255" expanded="true" signature="590:612" ph="select * fro... users" />
+            <marker date="1509200125255" expanded="true" signature="590:624" ph="select mail users" />
+            <marker date="1509200125255" expanded="true" signature="590:626" ph="select mail users" />
+            <marker date="1509200125255" expanded="true" signature="805:850" ph="insert into users... " />
+            <marker date="1509200125255" expanded="true" signature="1874:1912" ph="select passw... users" />
+            <marker date="1509200125255" expanded="true" signature="1874:1914" ph="select passw... users" />
+            <marker date="1509200125255" expanded="true" signature="2645:2661" ph="update users... " />
+            <marker date="1509200125255" expanded="true" signature="3278:3369" ph="select name,... " />
           </folding>
         </state>
       </provider>
@@ -581,28 +579,29 @@
           <caret line="100" column="27" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="27" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1508848736376" expanded="true" signature="590:612" ph="select * fro... users" />
-            <marker date="1508848736376" expanded="true" signature="590:624" ph="select mail users" />
-            <marker date="1508848736376" expanded="true" signature="590:626" ph="select mail users" />
-            <marker date="1508848736376" expanded="true" signature="805:850" ph="insert into users... " />
-            <marker date="1508848736376" expanded="true" signature="1874:1912" ph="select passw... users" />
-            <marker date="1508848736376" expanded="true" signature="1874:1914" ph="select passw... users" />
-            <marker date="1508848736376" expanded="true" signature="2645:2661" ph="update users... " />
-            <marker date="1508848736376" expanded="true" signature="3278:3369" ph="select name,... " />
+            <marker date="1509200125255" expanded="true" signature="590:612" ph="select * fro... users" />
+            <marker date="1509200125255" expanded="true" signature="590:624" ph="select mail users" />
+            <marker date="1509200125255" expanded="true" signature="590:626" ph="select mail users" />
+            <marker date="1509200125255" expanded="true" signature="805:850" ph="insert into users... " />
+            <marker date="1509200125255" expanded="true" signature="1874:1912" ph="select passw... users" />
+            <marker date="1509200125255" expanded="true" signature="1874:1914" ph="select passw... users" />
+            <marker date="1509200125255" expanded="true" signature="2645:2661" ph="update users... " />
+            <marker date="1509200125255" expanded="true" signature="3278:3369" ph="select name,... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pair/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="116" column="35" lean-forward="false" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+        <state relative-caret-position="883">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509198622451" expanded="true" signature="1496:1587" ph="select name,... " />
-            <marker date="1509198622451" expanded="true" signature="2534:2612" ph="insert into quick_pairs... " />
-            <marker date="1509198622451" expanded="true" signature="3218:3292" ph="insert into pairs... " />
-            <marker date="1509198622451" expanded="true" signature="3521:3558" ph="select * fro... pairs" />
+            <marker date="1509200751586" expanded="true" signature="1496:1587" ph="select name,... " />
+            <marker date="1509200751586" expanded="true" signature="2534:2612" ph="insert into quick_pairs... " />
+            <marker date="1509200751586" expanded="true" signature="3218:3292" ph="insert into pairs... " />
+            <marker date="1509200751586" expanded="true" signature="3521:3558" ph="select * fro... pairs" />
+            <marker date="1509200751586" expanded="true" signature="4009:4082" ph="select id,ty... pairs" />
           </folding>
         </state>
       </provider>
