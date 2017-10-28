@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AUnet_财务公开系统/.idea/AUnet_财务公开系统.iml" filepath="$PROJECT_DIR$/../AUnet_财务公开系统/.idea/AUnet_财务公开系统.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/WeParing.iml" filepath="$PROJECT_DIR$/.idea/WeParing.iml" />
       <module fileurl="file://$PROJECT_DIR$/../flasky/.idea/flasky.iml" filepath="$PROJECT_DIR$/../flasky/.idea/flasky.iml" />
       <module fileurl="file://$PROJECT_DIR$/../wenjie/.idea/wenjie.iml" filepath="$PROJECT_DIR$/../wenjie/.idea/wenjie.iml" />

@@ -5,9 +5,11 @@ from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from config import Config
 import os
+from .models import HttpAuth
 
-basedir = os.path.abspath(os.path.dirname(__file__))
+basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 dbdir=os.path.join(basedir,'data.db')
+httpauth=HttpAuth()
 
 bootstrap = Bootstrap()
 mail = Mail()
@@ -27,5 +29,8 @@ def create_app(config_name):
 
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)
+
+    from .pair import pair as pair_blueprint
+    app.register_blueprint(pair_blueprint)
 
     return app

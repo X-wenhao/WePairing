@@ -6,6 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="flasky" />
     <orderEntry type="module" module-name="wenjie" />
+    <orderEntry type="module" module-name="AUnet_财务公开系统" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
