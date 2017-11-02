@@ -5,6 +5,7 @@ from flask_mail import Message
 import sqlite3
 import random
 
+
 @auth.route('/api/V1.0/user/register',methods=['POST'])
 def api_register():
     args=request.get_json()
@@ -71,19 +72,20 @@ def api_set_info():
     if session.get('mail') != mail:
         return jsonify({"result":0})
 
-    args = request.get_json()
-    keys=['name','school','grade','major','gender','good_at','description','connection']
-    if list(args.keys()) != keys:
+    args = dict(request.form)
+    keys=['name','school','grade','major','gender','good_at','description','connection','icon_url']
+    if list(args.keys()) != keys[:-1]:
         return jsonify({'result': 0})
     sql='update users set'
     db=sqlite3.connect(dbdir)
-    for key in keys:
+    for key in keys[:-1]:
         sql+=' {}={},'.format(key,args[key])
     sql=sql[:-1]
     sql+=' where mail='+mail
     db = sqlite3.connect(dbdir)
     db.execute(sql)
     db.close()
+    session['name']=args['name']
     return jsonify({'result':1})
 
 @auth.route('/api/V1.0/user/get_info',methods=['GET'])
@@ -92,7 +94,7 @@ def api_register():
     if not name:
         return jsonify({'result':0})
     args = request.get_json()
-    keys = ['name', 'school', 'grade', 'major', 'gender', 'good_at', 'description', 'connection']
+    keys = ['name', 'school', 'grade', 'major', 'gender', 'good_at', 'description', 'connection','icon_url']
     if list(args.keys()) != keys:
         return jsonify({'result': 0})
     sql='select name,school,grade,major,gender,good_at,description,connection from users where name='+name
@@ -101,6 +103,5 @@ def api_register():
     re=dict(zip(keys,values))
     db.close()
     return jsonify(re)
-
 
 

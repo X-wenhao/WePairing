@@ -40,11 +40,11 @@ def api_get_users():
         return jsonify({'result': 0})
     print(name+"request quick_pair result")
 
-    keys = ['name', 'school', 'grade', 'major', 'gender', 'good_at', 'description', 'connection']
+    keys = ['name', 'school', 'grade', 'major', 'gender', 'good_at', 'description', 'connection','icon_url']
     db = sqlite3.connect(dbdir)
     re=[]
     for i in quick_pairs_pool[name].get('result'):
-        sql = 'select name,school,grade,major,gender,good_at,description,connection from users where name=' + i
+        sql = 'select name,school,grade,major,gender,good_at,description,connection,icon_url from users where name=' + i
         values = list(db.execute(sql).fetchone())
         re.append(dict(zip(keys, values)))
     db.close()
@@ -131,5 +131,72 @@ def api_get_pair():
     re=dict(zip(keys,data[:-1]))
     re['people_num']=len(data[-1].split())
     return jsonify(re)
+
+@pair.route('/api/V1.0/quick_pairs/get_users',methods=['GET'])
+def api_get_users_1():
+    id = request.args.get('id')
+    if not id :
+        return jsonify({'result':0})
+    db = sqlite3.connect(dbdir)
+    data=list(db.execute('select name,applicants from pairs where id='+id).fetchone())
+    if data[0]!=session.get('name'):
+        db.close()
+        return jsonify({'result':0})
+    keys = ['name', 'school', 'grade', 'major', 'gender', 'good_at', 'description', 'connection','icon_url']
+    re=[]
+    for i in list(data[1].split()):
+        sql = 'select name,school,grade,major,gender,good_at,description,connection,icon_url from users where name=' + i
+        values = list(db.execute(sql).fetchone())
+        re.append(dict(zip(keys, values)))
+    db.close()
+    print(re)
+    return jsonify(re)
+
+@pair.route('/api/V1.0/pairs/send_result',methods=['POST'])
+def api_send_result_1():
+    id = request.args.get('id')
+    if not id:
+        return jsonify({'result': 0})
+    keys=['applicant_name','result']
+    args=request.get_json()
+    if list(args.keys())!=keys:
+        return jsonify({'result': 0})
+    db=sqlite3.connect(dbdir)
+    sql='select name,applicants,agreed_persons from pairs where id='+id
+    data=list(db.execute(sql).fetchone())
+    if data[0]!=session.get('name'):
+        db.close()
+        return jsonify({'result':0})
+    changed_applicants=data[1].strip(args['applicant_name'])
+    sql="update pairs set applicants={} where id={}".format(changed_applicants,id)
+    db.execute(sql)
+
+    if args['result']==1:
+        changed=data[2]+' '+args['applicant_name']
+        sql = "update pairs set agreed_persons={} where id={}".format(changed, id)
+        db.execute(sql)
+
+    db.close()
+    return jsonify({'result': 1})
+
+@pair.route('/api/V1.0/pairs/apply',methods=['POST'])
+def api_apply():
+    id = request.args.get('id')
+    applicant_name=request.args.get('applicant_name')
+    if not id or not applicant_name:
+        return jsonify({'result': 0})
+
+    db = sqlite3.connect(dbdir)
+    sql = 'select name,applicants,agreed_persons from pairs where id=' + id
+    data = list(db.execute(sql).fetchone())
+    changed_applicants =data[1]+' applicant_name'
+    sql = "update pairs set applicants={} where id={}".format(changed_applicants, id)
+    db.execute(sql)
+    db.close()
+    return jsonify({'result': 1})
+
+
+
+
 
 
