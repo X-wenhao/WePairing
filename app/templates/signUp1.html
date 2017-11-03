@@ -1,0 +1,93 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>signIn</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="./Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+	}
+	#wrapper{
+		width: 450px;
+		height: 900px;
+		margin:0 auto;
+		background-color:rgb(252,251,249); 
+		position: relative;
+		background-image: url(./signingPageBackground.png) ;
+		background-size: contain;
+	}
+	/* #backgroundImg{
+		width: 450px;
+		height: 800px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	} */
+	#logo{
+		position: absolute;
+		left: 180px;
+		top: 210px;
+		width: 110px;
+	}
+	form{
+
+		font-size: 20px;
+		padding-top: 400px;
+		padding-left: 80px;
+		width: 320px;
+	}
+	form div{
+		background-color:rgb(232,227,227); 
+		padding-left: 10px;
+	}
+	form div i{
+		border-right: 1px solid rgb(178,176,176);
+		padding-right: 10px;
+		font-size: 20px;
+	}
+	input{
+		background-color:rgb(232,227,227); 
+		padding: 0 40px;
+		font-size: 15px;
+		margin-left: 15px;
+		border: none;
+		height: 50px;
+		border-radius: 5px;
+		
+	}
+	button{
+		margin-top: 60px;
+		background-color: rgb(1,186,212);
+		border: none;
+		color: #fff;
+		width: 320px;
+		height: 50px;
+		border-radius: 8px;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">	
+		<img id="logo" src="./logo.png">
+		<!-- <img id="backgroundImg" src="./signingPageBackground.png"> -->
+		<form action="">
+			<div>
+				<i class="icon-envelope-alt"></i><input type="text" placeholder="请输入邮箱进行注册">
+			</div>
+			<button>下一步</button>
+		</form>
+
+	</div>
+
+
+	
+</body>
+
+</html>

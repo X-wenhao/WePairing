@@ -1,0 +1,142 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>userHome</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="./Font-Awesome-3.2.1/css/font-awesome.css">
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+	}
+	#wrapper{
+		width: 450px;
+		margin:0 auto;
+		/* background-color:rgb(252,251,249);  */
+		height: 800px;
+		position: relative;
+	}
+	#backgroundImg{
+		position: absolute;
+		margin: 0 auto;
+		z-index: -1;
+	}
+
+	.faceImg{
+		width: 40px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	#userFace{
+		margin-top: 130px;
+		margin-left: 180px;
+		margin-bottom: 80px;
+		width: 100px;
+		
+	}
+	#info{
+		text-align: center;
+		line-height: 40px;
+		margin-bottom: 30px;
+	}
+	#routine{
+		background-color: rgb(249,248,247);
+		margin-bottom: 80px;
+	}
+	.routinePiece{
+		border-left: 5px solid rgb(175,218,233);
+		margin-left: 80px;
+		line-height: 40px;
+		padding-left: 50px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+
+		position: relative;	
+	}
+	.routinePiece button{
+		position: absolute;
+		left: -23px;
+		top: 30px;
+
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: none;
+		
+		font-size: 20px;
+		font-weight: 30px;
+	}
+	.routinePiece a{
+		display: inline-block;
+		margin-top: -40px;
+		margin-right: 10px;
+		padding-left: 240px;
+
+	}
+	.routinePiece strong{
+		display: block;
+	}
+	.forthComing{
+
+	}
+	.overdue{
+
+	}
+	.now{
+		background-color: rgb(175,218,233);
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">	
+		<div id="navLoader"></div>
+		<img id="backgroundImg" src="./userHomeBackground.png" width="450px" height="800px">
+		<img id="userFace" class="faceImg" src="" alt="头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头">		
+
+		<div id="info">
+			<strong>CEOChang♂</strong>
+			<p>
+				<i class="icon-map-marker"></i> 华中科技大学 软件工程 大二
+			</p>
+			<p>
+				<i class="icon-book"></i>
+				 面向对象 电路理论
+			</p>
+			<p>
+				单身，未婚（？？？）
+				<a><i class="icon-edit"></i></a>
+			</p>
+		</div>	
+		<div id="routine">
+			<div class="routinePiece">
+				<button class="forthComing"></button>
+				<strong>东九 下午 5-8节</strong>
+				<p><i class="icon-time"></i>12minutes ago</p>
+				<a><i class="icon-user"></i>2/3人</a>
+			</div>
+			<div class="routinePiece">
+				<button class="now"><i class="icon-ok"></i></button>
+				<strong>东九 下午 5-8节</strong>
+				<p><i class="icon-time"></i>12minutes ago</p>
+				<a><i class="icon-user"></i>2/3人</a>
+			</div>
+			<div class="routinePiece">
+				<button class="overdue"><i class="icon-remove"></i></button>
+				<strong>东九 下午 5-8节</strong>
+				<p><i class="icon-time"></i>12minutes ago</p>
+				<a><i class="icon-user"></i>2/3人</a>
+			</div>
+
+
+		</div>
+	</div>
+	
+</body>
+	<script>
+		$("#navLoader").load( "./navTemplates.html" );
+	</script>	
+
+</html>

@@ -16,14 +16,17 @@ def api_register():
         return jsonify({'result':0})
 
     db=sqlite3.connect(dbdir)
+
     sql='select mail from users where mail={}'.format(args['mail'])
     if db.execute(sql).fetchone():
         db.close()
         return jsonify({'result':0})
     hashed_pwd=httpauth.hash_password(args['password'])
+
     sql='insert into users(mail,password)values({},{})'.format(args['mail'],hashed_pwd)
     db.execute(sql)
     db.close()
+
     return jsonify({'result':1})
 
 
@@ -38,6 +41,7 @@ def api_send_mail():
     msg = Message("验证码", sender=current_app.config['MAIL_USERNAME'], recipients=[args_dict.get('mail')])
     # print(args_dict['address'])
     # print(args_dict['content'])
+
     ver_code=random.randint(100000,999999)
     session[args_dict['ver_code']]=ver_code
     msg.body =ver_code
@@ -47,6 +51,7 @@ def api_send_mail():
     except:
         session.pop(args_dict['mail'])
         return jsonify({'result': 0})
+
     return jsonify({'result': 1})
 
 @auth.route('/api/V1.0/user/login',methods=['GET'])
@@ -54,15 +59,19 @@ def api_login():
     args = request.get_json()
     if list(args.keys()) != ['mail', 'password']:
         return jsonify({'result': 0})
+
     sql='select password from users where mail={}'.format(args['mail'])
     db=sqlite3.connect(dbdir)
     hashed_pwd=db.execute(sql).fetchone()
+
     if not hashed_pwd:
         return jsonify({'result':0})
     if not hashed_pwd==httpauth.hash_password(args['password']):
         return jsonify({'result': 0})
+
     httpauth.login_user(args['mail'])
     db.close()
+
     return jsonify({'result': 1})
 
 
