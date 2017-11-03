@@ -1,12 +1,9 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>vueTEST_viewingPage</title>
+	<title>viewingPage</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="./Font-Awesome-3.2.1/css/font-awesome.min.css">
-	
-	<script src="https://unpkg.com/vue"></script>
-	
 	<style>
 	*{
 		margin: 0;
@@ -97,44 +94,46 @@
 				<li>人数</li>
 			</ul>
 		</div>
-		<div id="examplePieces">
-			<template v-for="item in items">
-				<!-- template标签不用js渲染时不显示 -->
-				
-				<!-- 
-				<p>{{ item.message}}</p>
-				 -->
-				<!-- 
-				<div class="pieces">
-					<div class="topLayer">
-						<a href=""><i class="icon-plus"></i></a>
-					</div>
-					<img src="" alt="头头头头">
-					<strong>东九	下午 5-8节 </strong>
-					<div id="details">
-						<span><i class="icon-user"></i>2/3人</span>
-						<br>
-						<span><i class="icon-time"></i>12:15</span>	
-					</div>
-					<p>补充说明：</span>
+		<div>
+			<div class="pieces">
+				<div class="topLayer">
+					<a href=""><i class="icon-plus"></i></a>
 				</div>
-
-				 -->
-				<div class="pieces">
-					<div class="topLayer">
-						<a href=""><i class="icon-plus"></i></a>
-					</div>
-					<img src="" alt="头头头头">
-					<strong>{{item.place}}	 {{item.time}} </strong>
-					<div id="details">
-						<span><i class="icon-user"></i>{{item.nowNumber}}/{{item.volume}}人</span>
-						<br>
-						<span><i class="icon-time"></i>{{item.time}}</span>	
-					</div>
-					<p>补充说明：{{item.moreInfo}}</span>
+				<img src="" alt="头头头头">
+				<strong>东九	 下午 5-8节 </strong>
+				<div id="details">
+					<span><i class="icon-user"></i>2/3人</span>
+					<br>
+					<span><i class="icon-time"></i>12:15</span>	
 				</div>
-
-			</template>
+				<p>补充说明：</span>
+			</div>
+			<div class="pieces">
+				<div class="topLayer">
+					<a href=""><i class="icon-plus"></i></a>
+				</div>
+				<img src="" alt="头头头头">
+				<strong>东九	 下午 5-8节 </strong>
+				<div id="details">
+					<span><i class="icon-user"></i>2/3人</span>
+					<br>
+					<span><i class="icon-time"></i>12:15</span>	
+				</div>
+				<p>补充说明：</span>
+			</div>
+			<div class="pieces">
+				<div class="topLayer">
+					<a href=""><i class="icon-plus"></i></a>
+				</div>
+				<img src="" alt="头头头头">
+				<strong>东九	 下午 5-8节 </strong>
+				<div id="details">
+					<span><i class="icon-user"></i>2/3人</span>
+					<br>
+					<span><i class="icon-time"></i>12:15</span>	
+				</div>
+				<p>补充说明：</span>
+			</div>			
 		</div>
 	</div>
 	
@@ -142,34 +141,5 @@
 	<script>
 		$("#navLoader").load( "./navTemplates.html" );
 	</script>	
-	<script>
-		var example1 = new Vue({
-			  el: '#examplePieces',
 
-				data:{
-					items:[
-						{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
-						},
-						{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
-						}						
-
-					]
-				}
-
-
-			})
-			
-	</script>
 </html>
