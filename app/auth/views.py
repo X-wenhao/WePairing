@@ -97,8 +97,9 @@ def api_set_info():
     session['name']=args['name']
     return jsonify({'result':1})
 
+
 @auth.route('/api/V1.0/user/get_info',methods=['GET'])
-def api_register():
+def api_get_info():
     name=request.args.get('name')
     if not name:
         return jsonify({'result':0})

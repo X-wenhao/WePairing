@@ -1,6 +1,6 @@
 from . import pair
 from .. import dbdir,mail,httpauth
-from flask import request,jsonify,current_app,session
+from flask import request,jsonify,current_app,session,render_template
 from flask_mail import Message
 import sqlite3
 import time
@@ -9,7 +9,7 @@ quick_pairs_pool={}
 divided_pairs_pool={}
 
 @pair.route('/api/V1.0/quick_pairs/release_pair',methods=['POST'])
-def api_release_pair():
+def api_release_quick_pair():
     name=request.args.get('name')
     if not name:
         return jsonify({'result':0})
@@ -151,7 +151,7 @@ def api_get_pair():
     re['people_num']=len(data[-1].split())
     return jsonify(re)
 
-@pair.route('/api/V1.0/quick_pairs/get_users',methods=['GET'])
+@pair.route('/api/V1.0/pairs/get_users',methods=['GET'])
 def api_get_users_1():
     id = request.args.get('id')
     if not id :
@@ -239,3 +239,6 @@ def api_apply():
 
     return jsonify({'result': 1})
 
+@pair.route('/viewingPage',methods=['GET'])
+def viewingPage():
+    return render_template('viewingPage.html')

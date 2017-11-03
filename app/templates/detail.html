@@ -3,7 +3,8 @@
 	<meta charset="UTF-8">
 	<title>detail</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<link rel="stylesheet" href="./Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<script src="../static/js/vue.min.js"></script>
 	<style>
 	*{
 		margin: 0;
@@ -67,7 +68,21 @@
 			<li><span>补充说明：</span></li>
 		</ul>
 		<div id="members">
-			<div class="memberCard">
+			<template v-for="item in items">
+				<div class="memberCard">
+					<img class="faceImg" src="" alt="头头头头头">
+					<p>
+					{{item.name}}
+					</p>
+					<p>{{item.school}}</p>
+					<p>{{item.grade}} {{item.major}}</p>
+					<p>擅长科目：</p>
+					<p>{{item.goodAt}}、</p>
+
+				</div>				
+			</template>
+
+			<!-- <div class="memberCard">
 				<img class="faceImg" src="" alt="头头头头头">
 				<p>
 				CEOChang♂
@@ -76,21 +91,9 @@
 				<p>大二 软件工程</p>
 				<p>擅长科目：</p>
 				<p>面向对象、电路理论</p>
-
-			</div>
-			<div class="memberCard">
-				<p>
-				CEOChang♂
-				</p>
-				<p>华中科技大学</p>
-				<p>大二 软件工程</p>
-				<p>擅长科目：</p>
-				<p>面向对象、电路理论</p>
 			
-				
-			</div>
-			<div class="memberCard"></div>
-			<div class="memberCard"></div>
+			</div> -->
+
 		</div>
 	</div>
 	
@@ -98,5 +101,41 @@
 	<script>
 		$("#navLoader").load( "./navTemplates.html" );
 	</script>	
+	<script>
+		var example1 = new Vue({
+			  el: '#members',
 
+				data:{
+					items:[
+						{
+							name: 'CEOChang♂',
+							scholl:'华中科技大学',
+							grade:'大二',
+							major:'软件工程',
+							volume:3,
+							goodAt:"面向对象、电路理论"
+						},
+						{
+							name: 'CEOChang♂',
+							scholl:'华中科技大学',
+							grade:'大二',
+							major:'软件工程',
+							volume:3,
+							goodAt:"面向对象、电路理论"
+						},
+						{
+							name: 'CEOChang♂',
+							scholl:'华中科技大学',
+							grade:'大二',
+							major:'软件工程',
+							volume:3,
+							goodAt:"面向对象、电路理论"
+						}
+					]
+				}
+
+
+			})
+			
+	</script>
 </html>

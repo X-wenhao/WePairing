@@ -2,7 +2,15 @@ from functools import wraps
 from flask import session,jsonify
 import hashlib
 import sqlite3
-from . import dbdir
+#from . import dbdir
+
+import os
+
+basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+dbdir=os.path.join(basedir,'data.db')
+print(dbdir)
+
 class HttpAuth(object):
     '''
     用户认证相关
