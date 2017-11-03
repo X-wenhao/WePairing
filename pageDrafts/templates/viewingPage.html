@@ -102,7 +102,7 @@
 				<!-- template标签不用js渲染时不显示 -->
 				
 				<!-- 
-				<p>{{ item.message}}</p>
+				<p>{{item.message}}</p>
 				 -->
 				<!-- 
 				<div class="pieces">
@@ -170,6 +170,18 @@
 
 
 			})
+
+function function_name(argument) {
+	$.ajax({
+		type:'GET',
+		url:'/api/V1.0/pairs/get_pairs',
+		dataType:'json'
+	}
+	.done(function (data) {
+		console.log(data);
+	})
+	)
+}
 			
 	</script>
 </html>
