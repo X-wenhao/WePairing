@@ -40,7 +40,7 @@ POST /api/V1.0/user/set_info？mail=
     good_at:str,  //以空格分隔如：“数学 英语 语文”
     description:str,
     connection:str,    //联系方式
-    icon:file
+    //icon:file
 }
 return
 {
@@ -59,13 +59,14 @@ return
     good_at:str,  //以空格分隔如：“数学 英语 语文”
     description:str,
     connection:str,
-    icon_url:str
+    //icon_url:str
 }
 
 获取用户速配信息（速配记录，发布的速配单及状况）
 GET /api/V1.0/user/get_pair_info?name=&type=    //type为quick_pair或者pair
+PS:V1.1修订 type参数依然存在，固定为pair  即获取配对记录
 return
-//type=quick_pair
+//type=quick_pair  
     [
         {
             time:str,
@@ -83,7 +84,9 @@ return
         {}
     ]
 
+
 发布速配
+PS：V1.1修订  取消此api
 POST /api/V1.0/quick_pairs/release_pair?name=
 {
     location:str
@@ -94,6 +97,7 @@ return
 }
 
 返回速配结果(用户信息)
+PS：V1.1修订  取消此api
 GET /api/V1.0/quick_pairs/get_users?name=
 return
 [
@@ -112,6 +116,7 @@ return
 ]
 
 发送用户是否认可速配结果
+PS：V1.1修订  取消此api
 POST /api/V1.0/quick_pairs/send_result?name=&result=
 
 配对墙发布配对
@@ -164,7 +169,7 @@ return
         good_at:str,  //以空格分隔如：“数学 英语 语文”
         description:str,
         connection:str,
-        icon_url:str
+        //icon_url:str
 
     },
     {}
