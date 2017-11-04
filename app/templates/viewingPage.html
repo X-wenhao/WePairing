@@ -170,6 +170,25 @@
 
 
 			})
+
+function function_name() {
+	$.ajax({
+		type:'GET',
+		url:'/api/V1.0/pairs/get_pairs',
+		dataType:'json'
+	})
+	.done(function (data) {
+	    console.log("has load data")
+		console.log(data);
+	})
+        .fail(function(err){
+            console.log(err)
+        }
+
+	)
+}
+
+function_name()
 			
 	</script>
 </html>

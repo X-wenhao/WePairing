@@ -107,15 +107,15 @@ def api_release_pair():
         return jsonify({'result': 0})
 
     args = request.get_json()
-    keys = ['type', 'title', 'description']
+    keys = ['time', 'location', 'people_max','description']
     if list(args.keys()) != keys:
         return jsonify({'result': 0})
 
     db=sqlite3.connect(dbdir)
 
-    sql='insert into pairs(name,type,title,description)' \
-        'values("{}",""{}","{}","{}")'\
-        .format(name,args['type'],args['title'],
+    sql='insert into pairs(name,type,location,people_max,description)' \
+        'values("{}",""{}","{}","{}",{})'\
+        .format(name,args['type'],args['location'],args['people_max'],
                 args['description'])
     db.execute(sql)
 
@@ -125,14 +125,14 @@ def api_release_pair():
 
 @pair.route('/api/V1.0/pairs/get_pairs',methods=['GET'])
 def api_get_pairs():
-    sql='select id, name,type,title from pairs'
+    sql='select id, name,time,location,people_max,people_current,description from pairs'
     type=request.args.get('type')
-    if not type:
+    if type:
         sql=sql+' where type='+type
     db=sqlite3.connect(dbdir)
     data=db.execute(sql).fetchall()
     re=[]
-    keys=['id','name','type','title']
+    keys=['id','name','time','location','people_max','people_current','description']
     for row in data:
         re.append(dict(zip(keys,list(row))))
     return jsonify(re)
@@ -142,13 +142,12 @@ def api_get_pair():
     id=request.args.get('id')
     if not id:
         return {'result':0}
-    sql='select id,type,title,description,name,agreed_persons ' \
+    sql='select id, name,time,location,people_max,people_current,description ' \
         'from pairs where id='+id
     db=sqlite3.connect(dbdir)
     data=list(db.execute(sql).fetchone())
-    keys=['id','type','title','description','name']
-    re=dict(zip(keys,data[:-1]))
-    re['people_num']=len(data[-1].split())
+    keys=['id','name','time','location','people_max','people_current','description']
+    re=dict(zip(keys,data))
     return jsonify(re)
 
 @pair.route('/api/V1.0/pairs/get_users',methods=['GET'])
@@ -158,14 +157,14 @@ def api_get_users_1():
         return jsonify({'result':0})
 
     db = sqlite3.connect(dbdir)
-    data=list(db.execute('select name,applicants from pairs '
+    data=list(db.execute('select name,applicant from pairs '
                          'where id='+id).fetchone())
     if data[0]!=session.get('name'):
         db.close()
         return jsonify({'result':0})
 
     keys = ['name', 'school', 'grade', 'major', 'gender',
-            'good_at', 'description', 'connection','icon_url']
+            'good_at']
 
     re=[]
 
@@ -226,7 +225,7 @@ def api_apply():
 
     db = sqlite3.connect(dbdir)
 
-    sql = 'select name,applicants,agreed_persons from pairs ' \
+    sql = 'select name,applicant from pairs ' \
           'where id=' + id
     data = list(db.execute(sql).fetchone())
 

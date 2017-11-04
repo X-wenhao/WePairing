@@ -2,219 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f975a5ef-5526-408a-be07-d62b2dfb2f8d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/.ruby-version" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/css/font-awesome-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/font/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/font/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/font/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/font/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/font/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/extras.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/font-awesome-ie7.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/_bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/_extras.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/font-awesome-ie7.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/CNAME" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/ads/carbon-dark-vertical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-horizontal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-vertical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/brand-license.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/cheatsheet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/community.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/community/getting-support.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/community/project-milestones.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/community/reporting-bugs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/community/requesting-new-icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/community/submitting-pull-requests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/animated-spinner.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/bordered-pulled.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/bulleted-lists.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/button-dropdowns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/button-groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/form-inputs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/inline-icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/larger-icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/navigation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/new.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/rotated-flipped.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/examples/stacked.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/get-started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/brand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/currency.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/directional.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/medical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/new.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/text-editor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/video-player.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/icons/web-application.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/jumbotron-slider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/jumbotron.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/license-code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/license.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/stripe-ad.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/stripe-social.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/tell-me-thanks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-anchor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-btn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/tests/stacked-inside-anchor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/tests/stacked.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/thanks-to.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/whats-new.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_includes/why.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_layouts/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_layouts/icon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_plugins/icon_page_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/_plugins/site.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/css/prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/css/pygments.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/font/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/extras.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome-ie7.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_extras.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome-ie7.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/ico/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/img/contribution-sample.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/img/fort_awesome.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/img/icon-flag.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/ZeroClipboard-1.1.7.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/ZeroClipboard-1.1.7.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/backbone.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/bootstrap-2.3.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/bootstrap-222.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/prettify.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/site.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/js/underscore.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/accordion.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/close.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/hero-unit.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/labels-badges.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/layouts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/modals.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/reset.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-1200px-min.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-767px-max.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-768px-979px.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/sprites.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/wells.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/lazy.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/responsive-1200px-min.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/responsive-767px-max.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/responsive-768px-979px.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/responsive-navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/responsive.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/site.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/sticky-footer.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/assets/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/cheatsheet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/community.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/design.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/get-started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/icons.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/license.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/Font-Awesome-3.2.1/src/whats-new.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/signingPageBackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/userHomeBackground.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.db" afterPath="$PROJECT_DIR$/data.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AUnet_财务公开系统/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AUnet_财务公开系统/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/auth/views.py" afterPath="$PROJECT_DIR$/app/auth/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pair/views.py" afterPath="$PROJECT_DIR$/app/pair/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/detail.html" afterPath="$PROJECT_DIR$/app/templates/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/signIn.html" afterPath="$PROJECT_DIR$/app/templates/signIn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/signUp1.html" afterPath="$PROJECT_DIR$/app/templates/signUp1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/signUp2.html" afterPath="$PROJECT_DIR$/app/templates/signUp2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/signUp3.html" afterPath="$PROJECT_DIR$/app/templates/signUp3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/userHome.html" afterPath="$PROJECT_DIR$/app/templates/userHome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/viewingPage.html" afterPath="$PROJECT_DIR$/app/templates/viewingPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manager.py" afterPath="$PROJECT_DIR$/manager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../flasky/app/templates/base.html" afterPath="$PROJECT_DIR$/../flasky/app/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -229,18 +24,19 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/auth/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="551">
+              <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1509711624663" expanded="true" signature="592:614" ph="select * fro... users" />
-                <marker date="1509711624663" expanded="true" signature="592:626" ph="select mail users" />
-                <marker date="1509711624663" expanded="true" signature="592:628" ph="select mail users" />
-                <marker date="1509711624663" expanded="true" signature="808:853" ph="insert into users... " />
-                <marker date="1509711624663" expanded="true" signature="1881:1919" ph="select passw... users" />
-                <marker date="1509711624663" expanded="true" signature="1881:1921" ph="select passw... users" />
-                <marker date="1509711624663" expanded="true" signature="2671:2687" ph="update users... " />
-                <marker date="1509711624663" expanded="true" signature="3354:3445" ph="select name,... " />
+                <marker date="1509770390448" expanded="true" signature="592:614" ph="select * fro... users" />
+                <marker date="1509770390448" expanded="true" signature="592:626" ph="select mail users" />
+                <marker date="1509770390448" expanded="true" signature="592:628" ph="select mail users" />
+                <marker date="1509770390448" expanded="true" signature="808:853" ph="insert into users... " />
+                <marker date="1509770390448" expanded="true" signature="1881:1919" ph="select passw... users" />
+                <marker date="1509770390448" expanded="true" signature="1881:1921" ph="select passw... users" />
+                <marker date="1509770390448" expanded="true" signature="2633:2649" ph="update users... " />
+                <marker date="1509770390448" expanded="true" signature="3271:3350" ph="select name,... " />
+                <marker date="1509770390448" expanded="true" signature="3803:3811" ph="select * fro... pairs" />
               </folding>
             </state>
           </provider>
@@ -266,11 +62,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewingPage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/pair/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="220" column="31" lean-forward="true" selection-start-line="220" selection-start-column="31" selection-end-line="220" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1509770759449" expanded="true" signature="1546:1684" ph="select name,... " />
+                <marker date="1509770759449" expanded="true" signature="2633:2711" ph="insert into quick_pairs... " />
+                <marker date="1509770759449" expanded="true" signature="3336:3440" ph="insert into pairs... " />
+                <marker date="1509770759449" expanded="true" signature="3710:3788" ph="select * fro... pairs" />
+                <marker date="1509770759449" expanded="true" signature="4282:4383" ph="select id,ty... pairs" />
+                <marker date="1509770759449" expanded="true" signature="4821:4891" ph="select name,... pairs" />
+                <marker date="1509770759449" expanded="true" signature="5147:5285" ph="select name,... " />
+                <marker date="1509770759449" expanded="true" signature="5786:5857" ph="select name,... pairs" />
+                <marker date="1509770759449" expanded="true" signature="6069:6109" ph="update pairs... " />
+                <marker date="1509770759449" expanded="true" signature="6069:6111" ph="update pairs... " />
+                <marker date="1509770759449" expanded="true" signature="6266:6329" ph="update pairs... " />
+                <marker date="1509770759449" expanded="true" signature="6706:6763" ph="select name,... pairs" />
+                <marker date="1509770759449" expanded="true" signature="6876:6916" ph="update pairs... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewingPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/viewingPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495">
-              <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+            <state relative-caret-position="425">
+              <caret line="173" column="23" lean-forward="false" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -297,12 +118,12 @@
         <option value="$PROJECT_DIR$/app/auth/__init__.py" />
         <option value="$PROJECT_DIR$/app/auth/models.py" />
         <option value="$PROJECT_DIR$/app/pair/__init__.py" />
-        <option value="$PROJECT_DIR$/app/pair/views.py" />
         <option value="$PROJECT_DIR$/manager.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
-        <option value="$PROJECT_DIR$/app/auth/views.py" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/templates/viewingPage.html" />
+        <option value="$PROJECT_DIR$/app/auth/views.py" />
+        <option value="$PROJECT_DIR$/app/pair/views.py" />
       </list>
     </option>
   </component>
@@ -320,8 +141,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="width" value="1926" />
+    <option name="x" value="957" />
+    <option name="width" value="963" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -440,10 +261,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1926" height="1080" extended-state="0" />
+    <frame x="957" y="0" width="963" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2277952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -483,14 +304,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509711624663" expanded="true" signature="592:614" ph="select * fro... users" />
-            <marker date="1509711624663" expanded="true" signature="592:626" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="592:628" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="808:853" ph="insert into users... " />
-            <marker date="1509711624663" expanded="true" signature="1881:1919" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="1881:1921" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="2671:2687" ph="update users... " />
-            <marker date="1509711624663" expanded="true" signature="3354:3445" ph="select name,... " />
+            <marker date="1509770390448" expanded="true" signature="592:614" ph="select * fro... users" />
+            <marker date="1509770390448" expanded="true" signature="592:626" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="592:628" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="808:853" ph="insert into users... " />
+            <marker date="1509770390448" expanded="true" signature="1881:1919" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="1881:1921" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="2633:2649" ph="update users... " />
+            <marker date="1509770390448" expanded="true" signature="3271:3350" ph="select name,... " />
+            <marker date="1509770390448" expanded="true" signature="3803:3811" ph="select * fro... pairs" />
           </folding>
         </state>
       </provider>
@@ -509,19 +331,19 @@
           <caret line="195" column="33" lean-forward="false" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509711173104" expanded="true" signature="1546:1684" ph="select name,... " />
-            <marker date="1509711173104" expanded="true" signature="2633:2711" ph="insert into quick_pairs... " />
-            <marker date="1509711173104" expanded="true" signature="3320:3407" ph="insert into pairs... " />
-            <marker date="1509711173104" expanded="true" signature="3655:3692" ph="select * fro... pairs" />
-            <marker date="1509711173104" expanded="true" signature="4143:4229" ph="select id,ty... pairs" />
-            <marker date="1509711173104" expanded="true" signature="4682:4753" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="5049:5187" ph="select name,... " />
-            <marker date="1509711173104" expanded="true" signature="5688:5759" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="5971:6011" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="5971:6013" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="6168:6231" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="6608:6681" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="6794:6834" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="1546:1684" ph="select name,... " />
+            <marker date="1509770759449" expanded="true" signature="2633:2711" ph="insert into quick_pairs... " />
+            <marker date="1509770759449" expanded="true" signature="3336:3440" ph="insert into pairs... " />
+            <marker date="1509770759449" expanded="true" signature="3710:3788" ph="select * fro... pairs" />
+            <marker date="1509770759449" expanded="true" signature="4282:4383" ph="select id,ty... pairs" />
+            <marker date="1509770759449" expanded="true" signature="4821:4891" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="5147:5285" ph="select name,... " />
+            <marker date="1509770759449" expanded="true" signature="5786:5857" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="6069:6109" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6069:6111" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6266:6329" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6706:6763" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="6876:6916" ph="update pairs... " />
           </folding>
         </state>
       </provider>
@@ -550,7 +372,7 @@
           <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1509711300253" expanded="true" signature="687:721" ph="select name users" />
+            <marker date="1509713435192" expanded="true" signature="687:721" ph="select name users" />
           </folding>
         </state>
       </provider>
@@ -561,14 +383,15 @@
           <caret line="12" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509711624663" expanded="true" signature="592:614" ph="select * fro... users" />
-            <marker date="1509711624663" expanded="true" signature="592:626" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="592:628" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="808:853" ph="insert into users... " />
-            <marker date="1509711624663" expanded="true" signature="1881:1919" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="1881:1921" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="2671:2687" ph="update users... " />
-            <marker date="1509711624663" expanded="true" signature="3354:3445" ph="select name,... " />
+            <marker date="1509770390448" expanded="true" signature="592:614" ph="select * fro... users" />
+            <marker date="1509770390448" expanded="true" signature="592:626" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="592:628" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="808:853" ph="insert into users... " />
+            <marker date="1509770390448" expanded="true" signature="1881:1919" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="1881:1921" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="2633:2649" ph="update users... " />
+            <marker date="1509770390448" expanded="true" signature="3271:3350" ph="select name,... " />
+            <marker date="1509770390448" expanded="true" signature="3803:3811" ph="select * fro... pairs" />
           </folding>
         </state>
       </provider>
@@ -605,7 +428,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1509711300253" expanded="true" signature="687:721" ph="select name users" />
+            <marker date="1509713435192" expanded="true" signature="687:721" ph="select name users" />
           </folding>
         </state>
       </provider>
@@ -616,19 +439,19 @@
           <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509711173104" expanded="true" signature="1546:1684" ph="select name,... " />
-            <marker date="1509711173104" expanded="true" signature="2633:2711" ph="insert into quick_pairs... " />
-            <marker date="1509711173104" expanded="true" signature="3320:3407" ph="insert into pairs... " />
-            <marker date="1509711173104" expanded="true" signature="3655:3692" ph="select * fro... pairs" />
-            <marker date="1509711173104" expanded="true" signature="4143:4229" ph="select id,ty... pairs" />
-            <marker date="1509711173104" expanded="true" signature="4682:4753" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="5049:5187" ph="select name,... " />
-            <marker date="1509711173104" expanded="true" signature="5688:5759" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="5971:6011" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="5971:6013" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="6168:6231" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="6608:6681" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="6794:6834" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="1546:1684" ph="select name,... " />
+            <marker date="1509770759449" expanded="true" signature="2633:2711" ph="insert into quick_pairs... " />
+            <marker date="1509770759449" expanded="true" signature="3336:3440" ph="insert into pairs... " />
+            <marker date="1509770759449" expanded="true" signature="3710:3788" ph="select * fro... pairs" />
+            <marker date="1509770759449" expanded="true" signature="4282:4383" ph="select id,ty... pairs" />
+            <marker date="1509770759449" expanded="true" signature="4821:4891" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="5147:5285" ph="select name,... " />
+            <marker date="1509770759449" expanded="true" signature="5786:5857" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="6069:6109" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6069:6111" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6266:6329" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6706:6763" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="6876:6916" ph="update pairs... " />
           </folding>
         </state>
       </provider>
@@ -722,14 +545,15 @@
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509711624663" expanded="true" signature="592:614" ph="select * fro... users" />
-            <marker date="1509711624663" expanded="true" signature="592:626" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="592:628" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="808:853" ph="insert into users... " />
-            <marker date="1509711624663" expanded="true" signature="1881:1919" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="1881:1921" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="2671:2687" ph="update users... " />
-            <marker date="1509711624663" expanded="true" signature="3354:3445" ph="select name,... " />
+            <marker date="1509770390448" expanded="true" signature="592:614" ph="select * fro... users" />
+            <marker date="1509770390448" expanded="true" signature="592:626" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="592:628" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="808:853" ph="insert into users... " />
+            <marker date="1509770390448" expanded="true" signature="1881:1919" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="1881:1921" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="2633:2649" ph="update users... " />
+            <marker date="1509770390448" expanded="true" signature="3271:3350" ph="select name,... " />
+            <marker date="1509770390448" expanded="true" signature="3803:3811" ph="select * fro... pairs" />
           </folding>
         </state>
       </provider>
@@ -811,7 +635,7 @@
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1509711300253" expanded="true" signature="687:721" ph="select name users" />
+            <marker date="1509713435192" expanded="true" signature="687:721" ph="select name users" />
           </folding>
         </state>
       </provider>
@@ -842,29 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pair/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509711173104" expanded="true" signature="1546:1684" ph="select name,... " />
-            <marker date="1509711173104" expanded="true" signature="2633:2711" ph="insert into quick_pairs... " />
-            <marker date="1509711173104" expanded="true" signature="3320:3407" ph="insert into pairs... " />
-            <marker date="1509711173104" expanded="true" signature="3655:3692" ph="select * fro... pairs" />
-            <marker date="1509711173104" expanded="true" signature="4143:4229" ph="select id,ty... pairs" />
-            <marker date="1509711173104" expanded="true" signature="4682:4753" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="5049:5187" ph="select name,... " />
-            <marker date="1509711173104" expanded="true" signature="5688:5759" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="5971:6011" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="5971:6013" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="6168:6231" ph="update pairs... " />
-            <marker date="1509711173104" expanded="true" signature="6608:6681" ph="select name,... pairs" />
-            <marker date="1509711173104" expanded="true" signature="6794:6834" ph="update pairs... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pair/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -878,24 +679,6 @@
         <state relative-caret-position="80">
           <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509711624663" expanded="true" signature="592:614" ph="select * fro... users" />
-            <marker date="1509711624663" expanded="true" signature="592:626" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="592:628" ph="select mail users" />
-            <marker date="1509711624663" expanded="true" signature="808:853" ph="insert into users... " />
-            <marker date="1509711624663" expanded="true" signature="1881:1919" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="1881:1921" ph="select passw... users" />
-            <marker date="1509711624663" expanded="true" signature="2671:2687" ph="update users... " />
-            <marker date="1509711624663" expanded="true" signature="3354:3445" ph="select name,... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,9 +700,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/viewingPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+        <state relative-caret-position="425">
+          <caret line="173" column="23" lean-forward="false" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1509770390448" expanded="true" signature="592:614" ph="select * fro... users" />
+            <marker date="1509770390448" expanded="true" signature="592:626" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="592:628" ph="select mail users" />
+            <marker date="1509770390448" expanded="true" signature="808:853" ph="insert into users... " />
+            <marker date="1509770390448" expanded="true" signature="1881:1919" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="1881:1921" ph="select passw... users" />
+            <marker date="1509770390448" expanded="true" signature="2633:2649" ph="update users... " />
+            <marker date="1509770390448" expanded="true" signature="3271:3350" ph="select name,... " />
+            <marker date="1509770390448" expanded="true" signature="3803:3811" ph="select * fro... pairs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pair/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="220" column="31" lean-forward="true" selection-start-line="220" selection-start-column="31" selection-end-line="220" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1509770759449" expanded="true" signature="1546:1684" ph="select name,... " />
+            <marker date="1509770759449" expanded="true" signature="2633:2711" ph="insert into quick_pairs... " />
+            <marker date="1509770759449" expanded="true" signature="3336:3440" ph="insert into pairs... " />
+            <marker date="1509770759449" expanded="true" signature="3710:3788" ph="select * fro... pairs" />
+            <marker date="1509770759449" expanded="true" signature="4282:4383" ph="select id,ty... pairs" />
+            <marker date="1509770759449" expanded="true" signature="4821:4891" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="5147:5285" ph="select name,... " />
+            <marker date="1509770759449" expanded="true" signature="5786:5857" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="6069:6109" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6069:6111" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6266:6329" ph="update pairs... " />
+            <marker date="1509770759449" expanded="true" signature="6706:6763" ph="select name,... pairs" />
+            <marker date="1509770759449" expanded="true" signature="6876:6916" ph="update pairs... " />
+          </folding>
         </state>
       </provider>
     </entry>

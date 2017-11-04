@@ -82,12 +82,12 @@ def api_set_info():
         return jsonify({"result":0})
 
     args = dict(request.form)
-    keys=['name','school','grade','major','gender','good_at','description','connection','icon_url']
+    keys=['name','school','grade','major','gender','good_at']
     if list(args.keys()) != keys[:-1]:
         return jsonify({'result': 0})
     sql='update users set'
     db=sqlite3.connect(dbdir)
-    for key in keys[:-1]:
+    for key in keys:
         sql+=' {}={},'.format(key,args[key])
     sql=sql[:-1]
     sql+=' where mail='+mail
@@ -104,14 +104,34 @@ def api_get_info():
     if not name:
         return jsonify({'result':0})
     args = request.get_json()
-    keys = ['name', 'school', 'grade', 'major', 'gender', 'good_at', 'description', 'connection','icon_url']
+    keys = ['name', 'school', 'grade', 'major', 'gender', 'good_at']
     if list(args.keys()) != keys:
         return jsonify({'result': 0})
-    sql='select name,school,grade,major,gender,good_at,description,connection from users where name='+name
+    sql='select name,school,grade,major,gender,good_at,connection from users where name='+name
     db=sqlite3.connect(dbdir)
     values=list(db.execute(sql).fetchone())
     re=dict(zip(keys,values))
     db.close()
     return jsonify(re)
 
+@auth.route('/api/V1.0/user/get_pair_info',methods=["GET"])
+def api_user_get_pair_info():
+    name=request.args.get("name")
+    if not name:
+        return jsonify({"result":0})
+
+    db=sqlite3.connect(dbdir)
+    keys=['id','name','time','location','people_max','people_current','description']
+    sql="select "
+    for key in keys:
+        sql+=key+","
+    sql=sql[:-1]
+    sql+=" from pairs where name="+name
+    data=db.execute(sql).fetchall()
+
+    re=[]
+    for row in data:
+        re.append(dict(zip(keys,list(row))))
+
+    return jsonify(re)
 
