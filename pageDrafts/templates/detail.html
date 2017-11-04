@@ -1,11 +1,10 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>userHome</title>
+	<title>detail</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.css">
+	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<script src="../static/js/vue.min.js"></script>
-
 	<style>
 	*{
 		margin: 0;
@@ -16,78 +15,45 @@
 	#wrapper{
 		width: 450px;
 		margin:0 auto;
-		/* background-color:rgb(252,251,249);  */
-		height: 800px;
-		position: relative;
+		background-color:rgb(252,251,249); 
 	}
-	#backgroundImg{
-		position: absolute;
-		margin: 0 auto;
-		z-index: -1;
+	ul{
+		margin: 0 20px;
+		padding: 0 40px;
+		background-color: rgb(248,247,243);
 	}
-
+	li{
+		margin: 5px;
+		height: 50px;
+		line-height: 50px;
+	}
+	li i{
+		margin-left: -20px;
+	}
+	li span{
+		height: 4em;
+	}
+	#members{
+		margin: 0 22px;
+	}
+	.memberCard{
+		display: inline-block;
+		background-color: rgb(245,240,233);
+		width: 180px;
+		text-align: center;
+		border-radius: 5px;
+		padding: 10px;
+		margin: 3px 0;
+		height: 200px;
+	}
 	.faceImg{
 		width: 40px;
 		border-radius: 50%;
 		overflow: hidden;
 	}
-	#userFace{
-		margin-top: 130px;
-		margin-left: 180px;
-		margin-bottom: 80px;
-		width: 100px;
-		
-	}
-	#info{
-		text-align: center;
-		line-height: 40px;
-		margin-bottom: 30px;
-	}
-	#routine{
-		background-color: rgb(249,248,247);
-		margin-bottom: 80px;
-	}
-	.routinePiece{
-		border-left: 5px solid rgb(175,218,233);
-		margin-left: 80px;
-		line-height: 40px;
-		padding-left: 50px;
-		padding-top: 20px;
-		padding-bottom: 10px;
-
-		position: relative;	
-	}
-	.routinePiece button{
-		position: absolute;
-		left: -23px;
-		top: 30px;
-
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		border: none;
-		
-		font-size: 20px;
-		font-weight: 30px;
-	}
-	.routinePiece a{
-		display: inline-block;
-		margin-top: -40px;
-		margin-right: 10px;
-		padding-left: 240px;
-
-	}
-	.routinePiece strong{
-		display: block;
-	}
-	.forthComing{
-
-	}
-	.overdue{
-
-	}
-	.now{
-		background-color: rgb(175,218,233);
+	.memberCard p{
+		font-size: 15px;
+		line-height: 25px;
 	}
 	</style>
 </head>
@@ -95,49 +61,38 @@
 <body>
 	<div id="wrapper">	
 		<div id="navLoader"></div>
-		<img id="backgroundImg" src="../static/img/userHomeBackground.png" width="450px" height="800px">
-		<img id="userFace" class="faceImg" src="" alt="头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头">		
-
-		<div id="info" >	
-			<strong >{{information.name}}</strong>
-			<p>
-				<i class="icon-map-marker"></i>{{information.school}} {{information.grade}} {{information.major}}
-			</p>
-			<p>
-				<i class="icon-book"></i>
-				{{information.goodAt}}
-			</p>
-			<p>
-				<!-- 单身，未婚（？？？） -->
-				<a><i class="icon-edit"></i></a>
-			</p>
-		</div>
-
-		<div id="routine">
-			
+		<ul id="details">
+			<li><i class="icon-calendar"></i>  时间 {{information.time}}</li>
+			<li><i class="icon-map-marker"></i>  地点 {{information.place}} </li>
+			<li><i class="icon-user" aria-hidden="true"></i>人数  {{information.volume}}</li>
+			<li><span>补充说明：{{information.moreinfo}} </span></li>
+		</ul>
+		<div id="members">
 			<template v-for="item in items">
-				<div class="routinePiece">
-					<button class="forthComing"></button><!--TODO时间判断-->
-					<strong>{{item.place}} {{item.date}}</strong>
-					<p><i class="icon-time"></i>{{item.time}}</p>
-					<a><i class="icon-user"></i>{{item.nowNumber}}/{{item.volume}}人</a>
-				</div>
+				<div class="memberCard">
+					<img class="faceImg" src="" alt="头头头头头">
+					<p>
+					{{item.name}}
+					</p>
+					<p>{{item.school}}</p>
+					<p>{{item.grade}} {{item.major}}</p>
+					<p>擅长科目：</p>
+					<p>{{item.goodAt}}、</p>
+
+				</div>				
 			</template>
 
-
-			<div class="routinePiece">
-				<button class="now"><i class="icon-ok"></i></button>
-				<strong>东九 下午 5-8节</strong>
-				<p><i class="icon-time"></i>12minutes ago</p>
-				<a><i class="icon-user"></i>2/3人</a>
-			</div>
-			<div class="routinePiece">
-				<button class="overdue"><i class="icon-remove"></i></button>
-				<strong>东九 下午 5-8节</strong>
-				<p><i class="icon-time"></i>12minutes ago</p>
-				<a><i class="icon-user"></i>2/3人</a>
-			</div>
-
+			<!-- <div class="memberCard">
+				<img class="faceImg" src="" alt="头头头头头">
+				<p>
+				CEOChang♂
+				</p>
+				<p>华中科技大学</p>
+				<p>大二 软件工程</p>
+				<p>擅长科目：</p>
+				<p>面向对象、电路理论</p>
+			
+			</div> -->
 
 		</div>
 	</div>
@@ -147,44 +102,29 @@
 		$("#navLoader").load( "./navTemplates.html" );
 	</script>	
 	<script>
-
-			Vue.component();
-			new Vue({
-			  el: '#routine',
+		
+		Vue.component();
+		new Vue({
+			  el: '#members',
 				data:{
 					items:[
 						{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
+							name: 'CEOChang♂',
+							school:'华中科技大学',
+							grade:'大二',
+							major:'软件工程',
 							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
+							goodAt:"面向对象、电路理论"
 						},
 						{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
+							name: 'CEOChang♂',
+							school:'华中科技大学',
+							grade:'大二',
+							major:'软件工程',
 							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
-						},						
+							goodAt:"面向对象、电路理论"
+						},
 						{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
-						}
-					],
-					test:'hello'
-				}
-			});
-			new Vue({
-				el: '#info',
-				  data:{
-					information:{
 							name: 'CEOChang♂',
 							school:'华中科技大学',
 							grade:'大二',
@@ -192,11 +132,22 @@
 							volume:3,
 							goodAt:"面向对象、电路理论"
 						}
+					]
+				}
+		});
+		new Vue({
+				el:'#details',
+				data:{
+					information:{
+							place: '东九',
+							date:'下午 5-8节',
+							nowNumber:2,
+							volume:3,
+							time:'12:15',
+							moreinfo:'暂无。'
+						}
 				  }
-			})
+		})
 			
-			
-
 	</script>
-
 </html>
