@@ -1,7 +1,6 @@
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>vueTEST_viewingPage</title>
+	<meta viewingPage</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	
@@ -143,7 +142,7 @@
 		$("#navLoader").load( "./navTemplates.html" );
 	</script>	
 	<script>
-		function function_name() {
+		function getDataViaAJAX() {
 			$.ajax({
 				type:'GET',
 				url:'/api/V1.0/pairs/get_pairs',
@@ -152,9 +151,8 @@
 			.done(function (data) {
 				console.log(data);
 			})
-			
 		};
-		function_name();
+		getDataViaAJAX();
 		var example1 = new Vue({
 			  el: '#examplePieces',
 
