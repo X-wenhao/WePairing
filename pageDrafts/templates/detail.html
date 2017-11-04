@@ -63,9 +63,9 @@
 		<div id="navLoader"></div>
 		<ul id="details">
 			<li><i class="icon-calendar"></i>  时间 {{information.time}}</li>
-			<li><i class="icon-map-marker"></i>  地点 {{information.place}} </li>
-			<li><i class="icon-user" aria-hidden="true"></i>人数  {{information.volume}}</li>
-			<li><span>补充说明：{{information.moreinfo}} </span></li>
+			<li><i class="icon-map-marker"></i>  地点 {{information.location}} </li>
+			<li><i class="icon-user" aria-hidden="true"></i>人数  {{information.people_max}}</li>
+			<li><span>补充说明：{{information.description}} </span></li>
 		</ul>
 		<div id="members">
 			<template v-for="item in items">
@@ -77,7 +77,7 @@
 					<p>{{item.school}}</p>
 					<p>{{item.grade}} {{item.major}}</p>
 					<p>擅长科目：</p>
-					<p>{{item.goodAt}}、</p>
+					<p>{{item.good_at}}、</p>
 
 				</div>				
 			</template>
@@ -104,7 +104,20 @@
 	<script>
 		
 		Vue.component();
-		new Vue({
+		var pairDetails=new Vue({
+				el:'#details',
+				data:{
+					information:{
+							location: '东九',
+							date:'下午 5-8节',
+							people_current:2,
+							people_max:3,
+							time:'12:15',
+							description:'暂无。'
+						}
+				  }
+		})
+		var memberDetails=new Vue({
 			  el: '#members',
 				data:{
 					items:[
@@ -113,41 +126,54 @@
 							school:'华中科技大学',
 							grade:'大二',
 							major:'软件工程',
-							volume:3,
-							goodAt:"面向对象、电路理论"
+							people_max:3,
+							good_at:"面向对象、电路理论"
 						},
 						{
 							name: 'CEOChang♂',
 							school:'华中科技大学',
 							grade:'大二',
 							major:'软件工程',
-							volume:3,
-							goodAt:"面向对象、电路理论"
+							people_max:3,
+							good_at:"面向对象、电路理论"
 						},
 						{
 							name: 'CEOChang♂',
 							school:'华中科技大学',
 							grade:'大二',
 							major:'软件工程',
-							volume:3,
-							goodAt:"面向对象、电路理论"
+							people_max:3,
+							good_at:"面向对象、电路理论"
 						}
 					]
 				}
 		});
-		new Vue({
-				el:'#details',
-				data:{
-					information:{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
-						}
-				  }
-		})
 			
+		function getPairDataViaAJAX() {
+			$.ajax({
+				type:'GET',
+				url:'/api/V1.0/pairs/get_pair',
+				dataType:'json'
+			})
+			.done(function (data) {
+				console.log(data);
+			})
+			return data;
+		};
+		function getMemberDataViaAJAX(){
+			$.ajax({
+				type:'GET',
+				url:'/api/V1.0/pairs/get_users',
+				dataType:'json'
+			})
+			.done(function (data) {
+				console.log(data);
+			})
+			return data;
+		}
+		pairDetails.information=getPairDataViaAJAX();
+		memberDetails.items=getMemberDataViaAJAX();
+		//成功则显示后台数据
+
 	</script>
 </html>

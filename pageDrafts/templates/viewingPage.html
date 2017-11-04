@@ -1,6 +1,7 @@
 <html>
 <head>
-	<meta viewingPage</title>
+	<meta charset="UTF-8">
+	<title>viewingPage</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	
@@ -124,13 +125,13 @@
 						<a href=""><i class="icon-plus"></i></a>
 					</div>
 					<img src="" alt="头头头头">
-					<strong>{{item.place}}	 {{item.time}} </strong>
+					<strong>{{item.location}}	 {{item.time}} </strong>
 					<div id="details">
-						<span><i class="icon-user"></i>{{item.nowNumber}}/{{item.volume}}人</span>
+						<span><i class="icon-user"></i>{{item.people_current}}/{{item.people_max}}人</span>
 						<br>
 						<span><i class="icon-time"></i>{{item.time}}</span>	
 					</div>
-					<p>补充说明：{{item.moreInfo}}</span>
+					<p>补充说明：{{item.description}}</span>
 				</div>
 
 			</template>
@@ -142,7 +143,33 @@
 		$("#navLoader").load( "./navTemplates.html" );
 	</script>	
 	<script>
-		function getDataViaAJAX() {
+		var example1 = new Vue({
+			  el: '#examplePieces',
+
+				data:{
+					items:[
+						{
+							location: '东九',
+							date:'下午 5-8节',
+							people_current:2,
+							people_max:3,
+							time:'12:15',
+							description:'暂无。'
+						},
+						{
+							location: '东九',
+							date:'下午 5-8节',
+							people_current:2,
+							people_max:3,
+							time:'12:15',
+							description:'暂无。'
+						}						
+
+					]
+				}
+			})
+
+		function getPairsViaAJAX() {
 			$.ajax({
 				type:'GET',
 				url:'/api/V1.0/pairs/get_pairs',
@@ -151,36 +178,9 @@
 			.done(function (data) {
 				console.log(data);
 			})
+			return data;
 		};
-		getDataViaAJAX();
-		var example1 = new Vue({
-			  el: '#examplePieces',
-
-				data:{
-					items:[
-						{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
-						},
-						{
-							place: '东九',
-							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
-							time:'12:15',
-							moreinfo:'暂无。'
-						}						
-
-					]
-				}
-
-
-			})
-
-			
+		example1.items=getDataViaAJAX();//成功则显示后台数据
+				
 	</script>
 </html>

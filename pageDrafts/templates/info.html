@@ -3,6 +3,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.css">
+	<script src="../static/js/vue.min.js"></script>
 	<title>info</title>
 	<style>
 	*{
@@ -49,23 +52,50 @@
 <body>
 	<div id="wrapper">
 		<div id="navLoader"></div>
+		<a href="">
+			<i class="icon-arrow-left"></i>
+		</a>
 		<form action="">
 			<ul>
-				<li>时间：<input type="text"></li>
-				<li>地点：<input type="text"></li>
-				<li>人数：<input type="text"></li>
+				<li>时间：<input v-model="time" type="text"></li>
+				<li>地点：<input v-model="location" type="text"></li>
+				<li>人数：<input v-model="people_max" type="text"></li>
 				<li>补充说明：</li>
 				<li>
-				
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea v-moedl="description" name="" id="" cols="30" rows="10"></textarea>
 				</li>
 			</ul>
-			<button>START</button>
+			<button type="button" onclick="submitForm();">START</button>
 		</form>
 	</div>
 </body>
 	<script>
 		$("#navLoader").load( "./navTemplates.html" );
 	</script>	
-
+	<script>
+		var formData=new Vue({
+		  el: 'form',
+		  data: {
+		    time: '',
+		    location:'',
+		    people_max:'',
+		    description:''
+		  }
+		});
+		//填写后自动改变。可使用如formData.time的方式调用
+		function submitForm() {
+			$.ajax({
+					type:'POST',
+					url:'/api/V1.0/pairs/release_pair',
+					data:{	
+						time:formData.time,
+						location=formData.location,
+						people_max=formData.people_max,
+						description=formData.description
+					}
+					dataType:'json'
+				})//TODO  凭直觉写的。。
+			};
+		}
+	</script>
 </html>

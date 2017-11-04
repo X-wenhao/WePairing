@@ -105,7 +105,7 @@
 			</p>
 			<p>
 				<i class="icon-book"></i>
-				{{information.goodAt}}
+				{{information.good_at}}
 			</p>
 			<p>
 				<!-- 单身，未婚（？？？） -->
@@ -118,9 +118,9 @@
 			<template v-for="item in items">
 				<div class="routinePiece">
 					<button class="forthComing"></button><!--TODO时间判断-->
-					<strong>{{item.place}} {{item.date}}</strong>
+					<strong>{{item.location}} {{item.date}}</strong>
 					<p><i class="icon-time"></i>{{item.time}}</p>
-					<a><i class="icon-user"></i>{{item.nowNumber}}/{{item.volume}}人</a>
+					<a><i class="icon-user"></i>{{item.people_now}}/{{item.people_max}}人</a>
 				</div>
 			</template>
 
@@ -149,38 +149,38 @@
 	<script>
 
 			Vue.component();
-			new Vue({
+			var routineDetails=new Vue({
 			  el: '#routine',
 				data:{
 					items:[
 						{
-							place: '东九',
+							location: '东九',
 							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
+							people_now:2,
+							people_max:3,
 							time:'12:15',
-							moreinfo:'暂无。'
+							description:'暂无。'
 						},
 						{
-							place: '东九',
+							location: '东九',
 							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
+							people_now:2,
+							people_max:3,
 							time:'12:15',
-							moreinfo:'暂无。'
+							description:'暂无。'
 						},						
 						{
-							place: '东九',
+							location: '东九',
 							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
+							people_now:2,
+							people_max:3,
 							time:'12:15',
-							moreinfo:'暂无。'
+							description:'暂无。'
 						}
 					],
 				}
 			});
-			new Vue({
+			var userDetails =	new Vue({
 				el: '#info',
 				  data:{
 					information:{
@@ -188,13 +188,37 @@
 							school:'华中科技大学',
 							grade:'大二',
 							major:'软件工程',
-							volume:3,
-							goodAt:"面向对象、电路理论"
+							good_at:"面向对象、电路理论"
 						}
 				  }
 			})
-			
-			
+
+
+			function getRoutineDataViaAJAX() {
+				$.ajax({
+					type:'GET',
+					url:'/api/V1.0/pairs/get_pairs',
+					dataType:'json'
+				})
+				.done(function (data) {
+					console.log(data);
+				})
+				return data;
+			};
+			function getUserDataViaAJAX() {
+				$.ajax({
+					type:'GET',
+					url:'/api/V1.0/pairs/get_pairs',
+					dataType:'json'
+				})
+				.done(function (data) {
+					console.log(data);
+				})
+				return data;
+			};
+			routineDetails.items=getRoutineDataViaAJAX();
+			routineDetails.information=getUserDataViaAJAX();
+				
 
 	</script>
 
