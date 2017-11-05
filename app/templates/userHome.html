@@ -118,25 +118,10 @@
 				<div v-on:click="seeDetails(item.id)" class="routinePiece">
 					<button class="forthComing"></button><!--TODO时间判断-->
 					<strong>{{item.location}} {{item.date}}</strong>
-					<p><i class="icon-time"></i>{{item.time}}</p>
-					<a><i class="icon-user"></i>{{item.people_now}}/{{item.people_max}}人</a>
+					<p><i class="icon-time"></i>{{item.release_time}}</p>
+					<a><i class="icon-user"></i>{{item.people_current}}/{{item.people_max}}人</a>
 				</div>
 			</template>
-
-
-			<div class="routinePiece">
-				<button class="now"><i class="icon-ok"></i></button>
-				<strong>东九 下午 5-8节</strong>
-				<p><i class="icon-time"></i>12minutes ago</p>
-				<a><i class="icon-user"></i>2/3人</a>
-			</div>
-			<div class="routinePiece">
-				<button class="overdue"><i class="icon-remove"></i></button>
-				<strong>东九 下午 5-8节</strong>
-				<p><i class="icon-time"></i>12minutes ago</p>
-				<a><i class="icon-user"></i>2/3人</a>
-			</div>
-
 
 		</div>
 		<div id="navLoader"></div>

@@ -123,10 +123,10 @@ def api_release_pair():
 
     db=sqlite3.connect(dbdir)
 
-    sql='insert into pairs(name,time,location,people_max,description,release_time,people_current)' \
-        'values("{}","{}","{}","{}","{}","{}",{})'\
+    sql='insert into pairs(name,time,location,people_max,description,release_time,people_current,applicant)' \
+        'values("{}","{}","{}","{}","{}","{}",{},"{}")'\
         .format(name,args['time'],args['location'],args['people_max'],
-                args['description'],time.strftime("%Y-%m-%d %H:%M"),0)
+                args['description'],time.strftime("%Y-%m-%d %H:%M"),0,"")
     db.execute(sql)
     db.commit()
     db.close()
@@ -259,6 +259,7 @@ def api_apply():
         return jsonify({'result':1})
 
     changed_applicants =data[1]+" "+applicant_name
+    changed_curent=1
     if not data[2]:
         data[2]=1
     else:

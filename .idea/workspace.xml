@@ -5,6 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.db" afterPath="$PROJECT_DIR$/data.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AUnet_财务公开系统/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AUnet_财务公开系统/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pair/views.py" afterPath="$PROJECT_DIR$/app/pair/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/userHome.html" afterPath="$PROJECT_DIR$/app/templates/userHome.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/viewingPage.html" afterPath="$PROJECT_DIR$/app/templates/viewingPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../flasky/app/templates/base.html" afterPath="$PROJECT_DIR$/../flasky/app/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,24 +69,24 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/pair/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="261" column="20" lean-forward="false" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1509886395494" expanded="true" signature="1598:1736" ph="select name,... " />
-                <marker date="1509886395494" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
-                <marker date="1509886395494" expanded="true" signature="3520:3661" ph="insert into pairs... " />
-                <marker date="1509886395494" expanded="true" signature="4005:4096" ph="select * fro... pairs" />
-                <marker date="1509886395494" expanded="true" signature="4630:4744" ph="select id,ty... pairs" />
-                <marker date="1509886395494" expanded="true" signature="5222:5292" ph="select name,... pairs" />
-                <marker date="1509886395494" expanded="true" signature="5548:5686" ph="select name,... " />
-                <marker date="1509886395494" expanded="true" signature="6212:6283" ph="select name,... pairs" />
-                <marker date="1509886395494" expanded="true" signature="6495:6535" ph="update pairs... " />
-                <marker date="1509886395494" expanded="true" signature="6495:6537" ph="update pairs... " />
-                <marker date="1509886395494" expanded="true" signature="6692:6755" ph="update pairs... " />
-                <marker date="1509886395494" expanded="true" signature="7348:7431" ph="select name,... pairs" />
-                <marker date="1509886395494" expanded="true" signature="7785:7812" ph="update pairs... " />
-                <marker date="1509886395494" expanded="true" signature="7785:7844" ph="update pairs... " />
+                <marker date="1509890625118" expanded="true" signature="1598:1736" ph="select name,... " />
+                <marker date="1509890625118" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
+                <marker date="1509890625118" expanded="true" signature="3520:3676" ph="insert into pairs... " />
+                <marker date="1509890625118" expanded="true" signature="4023:4114" ph="select * fro... pairs" />
+                <marker date="1509890625118" expanded="true" signature="4648:4762" ph="select id,ty... pairs" />
+                <marker date="1509890625118" expanded="true" signature="5240:5310" ph="select name,... pairs" />
+                <marker date="1509890625118" expanded="true" signature="5566:5704" ph="select name,... " />
+                <marker date="1509890625118" expanded="true" signature="6230:6301" ph="select name,... pairs" />
+                <marker date="1509890625118" expanded="true" signature="6513:6553" ph="update pairs... " />
+                <marker date="1509890625118" expanded="true" signature="6513:6555" ph="update pairs... " />
+                <marker date="1509890625118" expanded="true" signature="6710:6773" ph="update pairs... " />
+                <marker date="1509890625118" expanded="true" signature="7366:7449" ph="select name,... pairs" />
+                <marker date="1509890625118" expanded="true" signature="7824:7851" ph="update pairs... " />
+                <marker date="1509890625118" expanded="true" signature="7824:7883" ph="update pairs... " />
               </folding>
             </state>
           </provider>
@@ -148,9 +150,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="width" value="1926" />
-    <option name="height" value="1080" />
+    <option name="x" value="958" />
+    <option name="width" value="962" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -268,10 +270,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1926" height="1080" extended-state="0" />
+    <frame x="958" y="0" width="962" height="1076" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22698745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -345,20 +347,20 @@
           <caret line="195" column="33" lean-forward="false" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509886395494" expanded="true" signature="1598:1736" ph="select name,... " />
-            <marker date="1509886395494" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
-            <marker date="1509886395494" expanded="true" signature="3520:3661" ph="insert into pairs... " />
-            <marker date="1509886395494" expanded="true" signature="4005:4096" ph="select * fro... pairs" />
-            <marker date="1509886395494" expanded="true" signature="4630:4744" ph="select id,ty... pairs" />
-            <marker date="1509886395494" expanded="true" signature="5222:5292" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="5548:5686" ph="select name,... " />
-            <marker date="1509886395494" expanded="true" signature="6212:6283" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="6495:6535" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="6495:6537" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="6692:6755" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="7348:7431" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="7785:7812" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="7785:7844" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="1598:1736" ph="select name,... " />
+            <marker date="1509890625118" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
+            <marker date="1509890625118" expanded="true" signature="3520:3676" ph="insert into pairs... " />
+            <marker date="1509890625118" expanded="true" signature="4023:4114" ph="select * fro... pairs" />
+            <marker date="1509890625118" expanded="true" signature="4648:4762" ph="select id,ty... pairs" />
+            <marker date="1509890625118" expanded="true" signature="5240:5310" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="5566:5704" ph="select name,... " />
+            <marker date="1509890625118" expanded="true" signature="6230:6301" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="6513:6553" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="6513:6555" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="6710:6773" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="7366:7449" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="7824:7851" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="7824:7883" ph="update pairs... " />
           </folding>
         </state>
       </provider>
@@ -463,20 +465,20 @@
           <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509886395494" expanded="true" signature="1598:1736" ph="select name,... " />
-            <marker date="1509886395494" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
-            <marker date="1509886395494" expanded="true" signature="3520:3661" ph="insert into pairs... " />
-            <marker date="1509886395494" expanded="true" signature="4005:4096" ph="select * fro... pairs" />
-            <marker date="1509886395494" expanded="true" signature="4630:4744" ph="select id,ty... pairs" />
-            <marker date="1509886395494" expanded="true" signature="5222:5292" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="5548:5686" ph="select name,... " />
-            <marker date="1509886395494" expanded="true" signature="6212:6283" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="6495:6535" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="6495:6537" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="6692:6755" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="7348:7431" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="7785:7812" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="7785:7844" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="1598:1736" ph="select name,... " />
+            <marker date="1509890625118" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
+            <marker date="1509890625118" expanded="true" signature="3520:3676" ph="insert into pairs... " />
+            <marker date="1509890625118" expanded="true" signature="4023:4114" ph="select * fro... pairs" />
+            <marker date="1509890625118" expanded="true" signature="4648:4762" ph="select id,ty... pairs" />
+            <marker date="1509890625118" expanded="true" signature="5240:5310" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="5566:5704" ph="select name,... " />
+            <marker date="1509890625118" expanded="true" signature="6230:6301" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="6513:6553" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="6513:6555" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="6710:6773" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="7366:7449" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="7824:7851" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="7824:7883" ph="update pairs... " />
           </folding>
         </state>
       </provider>
@@ -767,24 +769,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pair/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="261" column="20" lean-forward="false" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1509886395494" expanded="true" signature="1598:1736" ph="select name,... " />
-            <marker date="1509886395494" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
-            <marker date="1509886395494" expanded="true" signature="3520:3661" ph="insert into pairs... " />
-            <marker date="1509886395494" expanded="true" signature="4005:4096" ph="select * fro... pairs" />
-            <marker date="1509886395494" expanded="true" signature="4630:4744" ph="select id,ty... pairs" />
-            <marker date="1509886395494" expanded="true" signature="5222:5292" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="5548:5686" ph="select name,... " />
-            <marker date="1509886395494" expanded="true" signature="6212:6283" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="6495:6535" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="6495:6537" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="6692:6755" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="7348:7431" ph="select name,... pairs" />
-            <marker date="1509886395494" expanded="true" signature="7785:7812" ph="update pairs... " />
-            <marker date="1509886395494" expanded="true" signature="7785:7844" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="1598:1736" ph="select name,... " />
+            <marker date="1509890625118" expanded="true" signature="2710:2788" ph="insert into quick_pairs... " />
+            <marker date="1509890625118" expanded="true" signature="3520:3676" ph="insert into pairs... " />
+            <marker date="1509890625118" expanded="true" signature="4023:4114" ph="select * fro... pairs" />
+            <marker date="1509890625118" expanded="true" signature="4648:4762" ph="select id,ty... pairs" />
+            <marker date="1509890625118" expanded="true" signature="5240:5310" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="5566:5704" ph="select name,... " />
+            <marker date="1509890625118" expanded="true" signature="6230:6301" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="6513:6553" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="6513:6555" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="6710:6773" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="7366:7449" ph="select name,... pairs" />
+            <marker date="1509890625118" expanded="true" signature="7824:7851" ph="update pairs... " />
+            <marker date="1509890625118" expanded="true" signature="7824:7883" ph="update pairs... " />
           </folding>
         </state>
       </provider>
