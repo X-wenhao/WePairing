@@ -110,6 +110,7 @@ def api_release_pair():
     name = request.args.get('name')
     if not name:
         name=session.get('name')
+    print(name)
     if not name:
         return jsonify({'result': 0})
 
@@ -121,11 +122,11 @@ def api_release_pair():
     db=sqlite3.connect(dbdir)
 
     sql='insert into pairs(name,time,location,people_max,description,release_time)' \
-        'values("{}",""{}","{}","{}","{}","{}")'\
+        'values("{}","{}","{}","{}","{}","{}")'\
         .format(name,args['time'],args['location'],args['people_max'],
                 args['description'],time.strftime("%Y-%m-%d %H:%M"))
     db.execute(sql)
-
+    db.commit()
     db.close()
 
     return jsonify({'result': 1})
@@ -267,7 +268,7 @@ def detail():
 def info():
     return render_template('info.html')
 
-@pair.route('/navTemplates',methods=['GET'])
+@pair.route('/navTemplates.html',methods=['GET'])
 def nav():
     return render_template('navTemplates.html')
 

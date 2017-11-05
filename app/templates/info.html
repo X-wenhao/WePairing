@@ -51,7 +51,6 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div id="navLoader"></div>
 		<!-- <a href="">
 			<i class="icon-arrow-left"></i>
 		</a> -->
@@ -68,6 +67,7 @@
 			<button type="button" onclick="submitForm();">START</button>
 		</form>
 	</div>
+		<div id="navLoader"></div>
 </body>
 	<script>
 		$("#navLoader").load( "./navTemplates.html" );
@@ -83,19 +83,25 @@
 		  }
 		});
 		//填写后自动改变。可使用如formData.time的方式调用
-		function submitForm() {
+	
+        function submitForm() {
 			$.ajax({
 					type:'POST',
 					url:'/api/V1.0/pairs/release_pair',
-					data:{	
+					contentType: "application/json; charset=utf-8",
+					data:JSON.stringify({	
 						time:formData.time,
-						location=formData.location,
-						people_max=formData.people_max,
-						description=formData.description
-					}
+						location:formData.location,
+						people_max:formData.people_max,
+						description:formData.description
+					}),
 					dataType:'json'
 				})
+				.done(function(data){
+				alert('发布成功');
+				})
 			};
-		}
+	
+		
 	</script>
 </html>

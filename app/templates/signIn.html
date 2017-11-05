@@ -5,6 +5,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../static/js/vue.min.js"></script>
 	<style>
 	*{
 		margin: 0;
@@ -73,14 +74,14 @@
 		<img id="logo" src="../static/img/logo.png">
 		<!-- <img id="backgroundImg" src="./signingPageBackground.png"> -->
 		<form action="">
-			<i class="icon-user"> </i> <input v-model="mail" type="text" placeholder="Name">
+			<i class="icon-user"> </i> <input v-model="mail" type="text" placeholder="Mail">
 			<hr>
 			<i class="icon-lock"> </i> <input v-model="password" type="password" placeholder="Password">
 			<br>
-			<button type="button" onclick="logIn">SIGN IN</button>
+			<button type="button" onclick="logIn()">SIGN IN</button>
 		</form>
 		<p>Not registered yet?
-		<br>Please <a href="">Sign up</a></p>
+		<br>Please <a href="/signUp1">Sign up</a></p>
 
 	</div>
 
@@ -97,22 +98,23 @@
 		});
 	function logIn(argument) {
 		$.ajax({
-				type:'GET',
+				type:'POST',
 				url:'/api/V1.0/user/login',
-				data:{	
-					mail:formData,mail,
+				contentType: "application/json; charset=utf-8",
+				data:JSON.stringify({	
+					mail:formData.mail,
 					password:formData.password
-				}
+				}),
 				dataType:'json'
-			}
+			})
 			.done(function(data) {
 				if(data=1){
-					window.location.href='  ';//跳转到的页面地址
+					window.location.href='/viewingPage';//跳转
 				}
 				else{alert('密码不对。检查一下？')}
 			})
-			)
+			
 		}
-	}
+	
 </script>
 </html>

@@ -5,6 +5,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../static/js/vue.min.js"></script>
 	<style>
 	*{
 		margin: 0;
@@ -147,29 +148,30 @@
    			good_at:''
 		  }
 		});
+		
 		function signUp2(argument) {
 		$.ajax({
 				type:'POST',
-				url:'/api/V1.0/user/set_info？mail=',
-				data:{	
+				url:'/api/V1.0/user/set_info',
+				contentType: "application/json; charset=utf-8",
+				data:JSON.stringify({	
 				  	name:formData.name,
-		    		school:formData.shool,
+		    		school:formData.school,
 		 		    grade:formData.grade,
 		   			major:formData.major,
 		   		    gender:formData.gender,  //man or woman
 		   			good_at:formData.good_at
 
-				}
+				}),
 				dataType:'json'
-			}
+			})
 			.done(function(data) {
 				if(data=1){
-					window.location.href='  ';//跳转到的页面地址
+					window.location.href='/viewingPage';//跳转
 				}
 				else{alert('设置失败。请填写完整信息')}
 			})
-			)
+			
 		}
-	}
 </script>
 </html>

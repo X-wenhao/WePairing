@@ -1,5 +1,5 @@
 from functools import wraps
-from flask import session,jsonify
+from flask import session,jsonify,abort
 import hashlib
 import sqlite3
 #from . import dbdir
@@ -18,16 +18,22 @@ class HttpAuth(object):
     def login_required(self,f):
         @wraps(f)
         def decorated(*args, **kwargs):
+            print('check login status')
             if session.get('mail'):
+                print(session.get('name'))
                 return f(*args, **kwargs)
             else:
-                return jsonify({"result":"login error"})
+                print(session.get('mail'))
+                print('has not login')
+                abort(401)
         return decorated
 
     def login_user(self,mail):
+        print('login。。。。')
+
         session['mail']=mail
         db=sqlite3.connect(dbdir)
-        name=db.execute('select name from users where mail='+mail).fetchone()
+        name=db.execute('select name from users where mail="{}"'.format(mail)).fetchone()
         session['name']=name
         db.close()
 

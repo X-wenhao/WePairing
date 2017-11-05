@@ -94,7 +94,6 @@
 
 <body>
 	<div id="wrapper">	
-		<div id="navLoader"></div>
 		<img id="backgroundImg" src="../static/img/userHomeBackground.png" width="450px" height="800px">
 		<img id="userFace" class="faceImg" src="" alt="头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头">		
 
@@ -140,6 +139,7 @@
 
 
 		</div>
+		<div id="navLoader"></div>
 	</div>
 	
 </body>
@@ -197,32 +197,45 @@
 			function getRoutineDataViaAJAX() {
 				$.ajax({
 					type:'GET',
-					url:'/api/V1.0/pairs/get_pairs',
+					url:'/api/V1.0/user/get_pair_info',
 					dataType:'json'
 				})
 				.done(function (data) {
-					// console.log(data);
+					 console.log(data);
+					routineDetails.items=data;
 					return data;
 				})
 			};
 			function getUserDataViaAJAX() {
 				$.ajax({
 					type:'GET',
-					url:'/api/V1.0/pairs/get_pairs',
+					url:'/api/V1.0/user/get_info',
 					dataType:'json'
 				})
 				.done(function (data) {
-					// console.log(data);
+					 console.log(data);
+					userDetails.information=data;
 					return data;
 				})
 			};
-			routineDetails.items=getRoutineDataViaAJAX();
-			routineDetails.information=getUserDataViaAJAX();
+			getRoutineDataViaAJAX();
+			getUserDataViaAJAX();
 				
 			function seeDetails(pairId) {
+				$.ajax({
+					type:'GET',
+					url:'/api/V1.0/pairs/get_pair?id='+pairId,
+					dataType:'json'
+				})
+				.done(function (data) {
 
+				})	
+
+
+				window.location.href='/detail?id='+pairId;
 				//跳转到显示某配对的detail页面。配对的id为传入的参数
 			}
+
 
 	</script>
 

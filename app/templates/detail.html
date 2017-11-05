@@ -148,11 +148,12 @@
 					]
 				}
 		});
-			
+		
+
 		function getPairDataViaAJAX() {
 			$.ajax({
 				type:'GET',
-				url:'/api/V1.0/pairs/get_pair',
+				url:'/api/V1.0/pairs/get_pair?id='+location.search.substring(4),
 				dataType:'json'
 			})
 			.done(function (data) {

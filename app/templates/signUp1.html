@@ -5,6 +5,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../static/js/vue.min.js"></script>
 	<style>
 	*{
 		margin: 0;
@@ -66,7 +67,8 @@
 		border: none;
 		height: 50px;
 		border-radius: 5px;
-	
+        width: 220px;
+        display:inline-block;
 	}
 	button{
 		margin-top: 60px;
@@ -90,14 +92,14 @@
 			</div>
 			<div>
 				<i class="icon-circle-blank"></i>
-				<input v-model="verification_code" style="width: 150px;padding-right: 0;" type="text" placeholder="请输入验证码">
+				<input v-model="vertification_code" style="width: 150px;padding-right: 0;" type="text" placeholder="请输入验证码">
 				<a v-on:click="sendVerification_code(formData.mail);">点击发送</a>
 			</div>
 			<div>
-				<i class="icon-lock"></i><input v-model="password" type="password" placeholder="密码">
+				<i class="icon-lock"></i><input v-model="password" type="password" placeholder="   密码">
 			</div>	
 			<div>
-				<i class="icon-lock"></i><input type="password" placeholder="确认密码">
+				<i class="icon-lock"></i><input type="password" placeholder="   确认密码">
 			</div>
 			<button type="button" onclick="signUp()">下一步</button>
 		</form>
@@ -109,49 +111,58 @@
 </body>
 <script>
 		var formData=new Vue({
+		  
 		  el: 'form',
+		  
 		  data: {
 		  	mail:'',
 		  	password:'',
-		  	verification_code:''
+		  	vertification_code:''
+		  },
+		  
+		  methods:{
+		   sendVerification_code: function (mailAddress) {
+				$.ajax({
+						type:'POST',
+						url:'/api/V1.0/user/send_mail?mail='+mailAddress,
+					})
+					.done(function(data) {
+						if (data.result==1) {
+							alert('发送成功');
+						}
+						else if(data.result==2){
+                            alert('邮箱已被注册');
+						}else
+						{
+							alert('发送失败，请检查邮箱填写');
+						}
+					})
+				}
 		  }
+
+
 		});
 	function signUp(argument) {
 		$.ajax({
-				type:'GET',
+				type:'POST',
 				url:'/api/V1.0/user/register',
-				data:{	
-					mail:formData,mail,
+				contentType: "application/json; charset=utf-8",
+				data:JSON.stringify({	
+					mail:formData.mail,
 					password:formData.password,
-					verification_code:formData.verification_code
-				}
+					vertification_code:formData.vertification_code
+				}),
 				dataType:'json'
-			}
+			})
 			.done(function(data) {
 				if(data=1){
-					window.location.href='  ';//跳转到的页面地址
+					window.location.href='/signUp2';//跳转
 				}
 				else{alert('验证码不对。检查一下？')}
-			})
+			}
 			)
 		}
-	}
-	$.ajax({
-				type:'POST',
-				url:'/api/V1.0/user/send_mail&mail=',
-			}//邮箱地址怎么填
-			.done(function(data) {
-				if (data=1) {
-					alert('发送成功');
-				}
-				else{
-					alert('发送失败，请检查邮箱填写');
-				}
-			})
-		}
-	function sendVerification_code(mailAddress) {
 
-	}
 
 
 </script>
