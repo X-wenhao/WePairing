@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>vueTEST_viewingPage</title>
+	<title>viewingPage</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	
@@ -125,13 +125,13 @@
 						<a href=""><i class="icon-plus"></i></a>
 					</div>
 					<img src="" alt="头头头头">
-					<strong>{{item.place}}	 {{item.time}} </strong>
+					<strong>{{item.location}}	 {{item.time}} </strong>
 					<div id="details">
-						<span><i class="icon-user"></i>{{item.nowNumber}}/{{item.volume}}人</span>
+						<span><i class="icon-user"></i>{{item.people_current}}/{{item.people_max}}人</span>
 						<br>
-						<span><i class="icon-time"></i>{{item.time}}</span>	
+						<span><i class="icon-time"></i>{{item.release_time}}</span>	
 					</div>
-					<p>补充说明：{{item.moreInfo}}</span>
+					<p>补充说明：{{item.description}}</span>
 				</div>
 
 			</template>
@@ -149,46 +149,39 @@
 				data:{
 					items:[
 						{
-							place: '东九',
+							location: '东九',
 							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
+							people_current:2,
+							people_max:3,
 							time:'12:15',
-							moreinfo:'暂无。'
+							description:'暂无。'
 						},
 						{
-							place: '东九',
+							location: '东九',
 							date:'下午 5-8节',
-							nowNumber:2,
-							volume:3,
+							people_current:2,
+							people_max:3,
 							time:'12:15',
-							moreinfo:'暂无。'
+							description:'暂无。'
 						}						
 
 					]
 				}
-
-
 			})
 
-function function_name() {
-	$.ajax({
-		type:'GET',
-		url:'/api/V1.0/pairs/get_pairs',
-		dataType:'json'
-	})
-	.done(function (data) {
-	    console.log("has load data")
-		console.log(data);
-	})
-        .fail(function(err){
-            console.log(err)
-        }
-
-	)
-}
-
-function_name()
+		function getDataViaAJAX() {
+			$.ajax({
+				type:'GET',
+				url:'/api/V1.0/pairs/get_pairs',
+				dataType:'json'
+			})
+			.done(function (data) {
+				console.log(data);
+				example1.items=data;
+			})
 			
+		};
+		getDataViaAJAX();//成功则显示后台数据
+				
 	</script>
 </html>

@@ -113,10 +113,10 @@ def api_release_pair():
 
     db=sqlite3.connect(dbdir)
 
-    sql='insert into pairs(name,type,location,people_max,description)' \
-        'values("{}",""{}","{}","{}",{})'\
-        .format(name,args['type'],args['location'],args['people_max'],
-                args['description'])
+    sql='insert into pairs(name,time,location,people_max,description,release_time)' \
+        'values("{}",""{}","{}","{}","{}","{}")'\
+        .format(name,args['time'],args['location'],args['people_max'],
+                args['description'],time.strftime("%Y-%m-%d %H:%M"))
     db.execute(sql)
 
     db.close()
@@ -125,14 +125,14 @@ def api_release_pair():
 
 @pair.route('/api/V1.0/pairs/get_pairs',methods=['GET'])
 def api_get_pairs():
-    sql='select id, name,time,location,people_max,people_current,description from pairs'
+    sql='select id, name,time,location,people_max,people_current,description,release_time from pairs'
     type=request.args.get('type')
     if type:
         sql=sql+' where type='+type
     db=sqlite3.connect(dbdir)
     data=db.execute(sql).fetchall()
     re=[]
-    keys=['id','name','time','location','people_max','people_current','description']
+    keys=['id','name','time','location','people_max','people_current','description','release_time']
     for row in data:
         re.append(dict(zip(keys,list(row))))
     return jsonify(re)
@@ -142,11 +142,11 @@ def api_get_pair():
     id=request.args.get('id')
     if not id:
         return {'result':0}
-    sql='select id, name,time,location,people_max,people_current,description ' \
+    sql='select id, name,time,location,people_max,people_current,description,release_time ' \
         'from pairs where id='+id
     db=sqlite3.connect(dbdir)
     data=list(db.execute(sql).fetchone())
-    keys=['id','name','time','location','people_max','people_current','description']
+    keys=['id','name','time','location','people_max','people_current','description','release_time']
     re=dict(zip(keys,data))
     return jsonify(re)
 

@@ -16,7 +16,6 @@
 		width: 450px;
 		height: 900px;
 		margin:0 auto;
-		background-color:rgb(252,251,249); 
 		position: relative;
 		background-image: url(../static/img/signingPageBackground.png) ;
 		background-size: contain;
@@ -29,38 +28,42 @@
 		top: 0;
 		z-index: -1;
 	} */
-	#logo{
+	#face{
 		position: absolute;
 		left: 180px;
 		top: 210px;
 		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		background-color: rgb(107,189,220);
 	}
+	#face i{
+		display: block;
+		margin-top: 45px;
+		margin-left: 48px;
+		color: white;
+		margin-top: 
+		padding-top: 140px;
+	}
+	/* #formTable{
+		background-color: rgb(243,243,243);
+	} */
 	form{
 		font-size: 20px;
-		padding-top: 400px;
-		padding-left: 80px;
-		width: 340px;
+		padding-top: 350px;
+		padding-left: 70px;
+		width: 320px;
 		
 	}
-	form div{
-		background-color:rgb(232,227,227); 
-	}
-	form div a{
-		font-size: 10px;
-		border-left: 1px solid black;
-		padding: 15px 7px;
-	}
 	input{
-		background-color:rgb(232,227,227); 
-		padding: 0 40px;
 		font-size: 15px;
 		margin-left: 15px;
 		border: none;
 		height: 50px;
-		border-radius: 5px;
+		margin-right: 20px;
 	}
 	button{
-		margin-top: 60px;
+		margin-top: 40px;
 		background-color: rgb(1,186,212);
 		border: none;
 		color: #fff;
@@ -68,21 +71,50 @@
 		height: 50px;
 		border-radius: 8px;
 	}
-
+	p{
+		font-size: 20px;
+		margin-top: 160px;
+		text-align: center;
+		color: rgb(204,204,204);
+	}
+	p a{
+		color: rgb(212,239,242);	
+	}
 	</style>
 </head>
 
 <body>
 	<div id="wrapper">	
-		<img id="logo" src="../static/img/logo.png">
+		<div id="face">	
+			<i class="icon-plus-sign"></i>
+		</div>
 		<!-- <img id="backgroundImg" src="./signingPageBackground.png"> -->
-		<form action="">
-			<div>
-				<input type="text" placeholder="请输入验证码">
-				<a href="">点击发送</a>
-			</div>
-			<button>下一步</button>
-		</form>
+		<div id="formTable">
+				
+			<form action="">
+					
+				<i class="icon-user"></i><input type="text" placeholder="姓名">
+				<hr>
+				<i class="icon-male"></i><i class="icon-female"></i><input type="s" placeholder="性别">
+				<hr>
+					
+				<!-- <i class="icon-lock"></i><input type="password" placeholder="密码"> -->
+				<!-- <hr> -->
+				
+				<!-- <i class="icon-lock"></i><input type="password" placeholder="确认密码"> -->
+				<!-- <hr> -->
+				<i class="icon-map-marker"></i><input type="text" placeholder="学校 专业 年级">
+				<hr>
+				<i class="icon-book"></i><input type="text" placeholder="擅长科目">
+				<hr>
+			
+				<button>完成</button>
+				
+			
+			</form>
+		</div>
+		<p>Not registered yet?
+		<br>Please <a href="">Sign up</a></p>
 
 	</div>
 

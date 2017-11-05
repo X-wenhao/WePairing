@@ -121,7 +121,7 @@ def api_user_get_pair_info():
         return jsonify({"result":0})
 
     db=sqlite3.connect(dbdir)
-    keys=['id','name','time','location','people_max','people_current','description']
+    keys=['id','name','time','location','people_max','people_current','description','release_time']
     sql="select "
     for key in keys:
         sql+=key+","

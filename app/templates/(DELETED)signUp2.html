@@ -39,34 +39,25 @@
 		font-size: 20px;
 		padding-top: 400px;
 		padding-left: 80px;
-		width: 320px;
+		width: 340px;
+		
 	}
 	form div{
 		background-color:rgb(232,227,227); 
-		padding-left: 10px;
-	}
-	form div i{
-		border-right: 1px solid rgb(178,176,176);
-		padding-right: 10px;
-		font-size: 20px;
 	}
 	form div a{
-		/*width: 80px;*/
-		margin-left: 20px;
-		background-color: #C2E1E4;
-		border-radius: 10px;
-		color: #68A2E4;
-		font-size: 18px;
-		display: inline-block;
+		font-size: 10px;
+		border-left: 1px solid black;
+		padding: 15px 7px;
 	}
 	input{
 		background-color:rgb(232,227,227); 
 		padding: 0 40px;
 		font-size: 15px;
+		margin-left: 15px;
 		border: none;
 		height: 50px;
 		border-radius: 5px;
-	
 	}
 	button{
 		margin-top: 60px;
@@ -84,20 +75,11 @@
 <body>
 	<div id="wrapper">	
 		<img id="logo" src="../static/img/logo.png">
+		<!-- <img id="backgroundImg" src="./signingPageBackground.png"> -->
 		<form action="">
 			<div>
-				<i class="icon-envelope-alt"></i><input type="text" placeholder="请输入邮箱进行注册">
-			</div>
-			<div>
-				<i class="icon-circle-blank"></i>
-				<input style="width: 150px;padding-right: 0;" type="text" placeholder="请输入验证码">
-				<a>点击发送</a>
-			</div>
-			<div>
-				<i class="icon-lock"></i><input type="password" placeholder="密码">
-			</div>	
-			<div>
-				<i class="icon-lock"></i><input type="password" placeholder="确认密码">
+				<input type="text" placeholder="请输入验证码">
+				<a href="">点击发送</a>
 			</div>
 			<button>下一步</button>
 		</form>

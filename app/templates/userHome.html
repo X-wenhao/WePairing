@@ -4,6 +4,8 @@
 	<title>userHome</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.css">
+	<script src="../static/js/vue.min.js"></script>
+
 	<style>
 	*{
 		margin: 0;
@@ -96,27 +98,33 @@
 		<img id="backgroundImg" src="../static/img/userHomeBackground.png" width="450px" height="800px">
 		<img id="userFace" class="faceImg" src="" alt="头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头头">		
 
-		<div id="info">
-			<strong>CEOChang♂</strong>
+		<div id="info" >	
+			<strong >{{information.name}}</strong>
 			<p>
-				<i class="icon-map-marker"></i> 华中科技大学 软件工程 大二
+				<i class="icon-map-marker"></i>{{information.school}} {{information.grade}} {{information.major}}
 			</p>
 			<p>
 				<i class="icon-book"></i>
-				 面向对象 电路理论
+				{{information.good_at}}
 			</p>
 			<p>
-				单身，未婚（？？？）
+				<!-- 单身，未婚（？？？） -->
 				<a><i class="icon-edit"></i></a>
 			</p>
-		</div>	
+		</div>
+
 		<div id="routine">
-			<div class="routinePiece">
-				<button class="forthComing"></button>
-				<strong>东九 下午 5-8节</strong>
-				<p><i class="icon-time"></i>12minutes ago</p>
-				<a><i class="icon-user"></i>2/3人</a>
-			</div>
+			
+			<template v-for="item in items">
+				<div class="routinePiece">
+					<button class="forthComing"></button><!--TODO时间判断-->
+					<strong>{{item.location}} {{item.date}}</strong>
+					<p><i class="icon-time"></i>{{item.time}}</p>
+					<a><i class="icon-user"></i>{{item.people_now}}/{{item.people_max}}人</a>
+				</div>
+			</template>
+
+
 			<div class="routinePiece">
 				<button class="now"><i class="icon-ok"></i></button>
 				<strong>东九 下午 5-8节</strong>
@@ -138,5 +146,80 @@
 	<script>
 		$("#navLoader").load( "./navTemplates.html" );
 	</script>	
+	<script>
+
+			Vue.component();
+			var routineDetails=new Vue({
+			  el: '#routine',
+				data:{
+					items:[
+						{
+							location: '东九',
+							date:'下午 5-8节',
+							people_now:2,
+							people_max:3,
+							time:'12:15',
+							description:'暂无。'
+						},
+						{
+							location: '东九',
+							date:'下午 5-8节',
+							people_now:2,
+							people_max:3,
+							time:'12:15',
+							description:'暂无。'
+						},						
+						{
+							location: '东九',
+							date:'下午 5-8节',
+							people_now:2,
+							people_max:3,
+							time:'12:15',
+							description:'暂无。'
+						}
+					],
+				}
+			});
+			var userDetails =	new Vue({
+				el: '#info',
+				  data:{
+					information:{
+							name: 'CEOChang♂',
+							school:'华中科技大学',
+							grade:'大二',
+							major:'软件工程',
+							good_at:"面向对象、电路理论"
+						}
+				  }
+			})
+
+
+			function getRoutineDataViaAJAX() {
+				$.ajax({
+					type:'GET',
+					url:'/api/V1.0/pairs/get_pairs',
+					dataType:'json'
+				})
+				.done(function (data) {
+					console.log(data);
+				})
+				return data;
+			};
+			function getUserDataViaAJAX() {
+				$.ajax({
+					type:'GET',
+					url:'/api/V1.0/pairs/get_pairs',
+					dataType:'json'
+				})
+				.done(function (data) {
+					console.log(data);
+				})
+				return data;
+			};
+			routineDetails.items=getRoutineDataViaAJAX();
+			routineDetails.information=getUserDataViaAJAX();
+				
+
+	</script>
 
 </html>
