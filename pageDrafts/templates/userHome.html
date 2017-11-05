@@ -116,7 +116,7 @@
 		<div id="routine">
 			
 			<template v-for="item in items">
-				<div class="routinePiece">
+				<div v-on:click="seeDetails(item.id)" class="routinePiece">
 					<button class="forthComing"></button><!--TODO时间判断-->
 					<strong>{{item.location}} {{item.date}}</strong>
 					<p><i class="icon-time"></i>{{item.time}}</p>
@@ -201,9 +201,9 @@
 					dataType:'json'
 				})
 				.done(function (data) {
-					console.log(data);
+					// console.log(data);
+					return data;
 				})
-				return data;
 			};
 			function getUserDataViaAJAX() {
 				$.ajax({
@@ -212,13 +212,17 @@
 					dataType:'json'
 				})
 				.done(function (data) {
-					console.log(data);
+					// console.log(data);
+					return data;
 				})
-				return data;
 			};
 			routineDetails.items=getRoutineDataViaAJAX();
 			routineDetails.information=getUserDataViaAJAX();
 				
+			function seeDetails(pairId) {
+
+				//跳转到显示某配对的detail页面。配对的id为传入的参数
+			}
 
 	</script>
 

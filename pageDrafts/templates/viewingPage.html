@@ -122,7 +122,7 @@
 				 -->
 				<div class="pieces">
 					<div class="topLayer">
-						<a href=""><i class="icon-plus"></i></a>
+						<a v-on:click="applyToJoin(item.id)"><i class="icon-plus"></i></a>
 					</div>
 					<img src="" alt="头头头头">
 					<strong>{{item.location}}	 {{item.time}} </strong>
@@ -140,7 +140,16 @@
 	
 </body>
 	<script>
-		$("#navLoader").load( "./navTemplates.html" );
+		// $("#navLoader").load( "./navTemplates.html" );
+		$.ajax({
+    	url: "./navTemplates.html",
+	    cache: false,
+	    dataType: "html",
+   		success: function(data) {
+        $("#navLoader").html(data);
+
+    }
+});
 	</script>	
 	<script>
 		var example1 = new Vue({
@@ -166,6 +175,12 @@
 						}						
 
 					]
+				},
+				methods:{
+					applyToJoin:function(pairId){
+						joinPair(pairId);
+
+					}
 				}
 			})
 
@@ -176,11 +191,21 @@
 				dataType:'json'
 			})
 			.done(function (data) {
-				console.log(data);
+				//console.log(data);
+				return data;
 			})
-			return data;
 		};
-		example1.items=getDataViaAJAX();//成功则显示后台数据
-				
+		
+
+		example1.items=getPairsViaAJAX();//成功则页面上显示后台读取得的数据
+		
+
+		function joinPair(pairId) {
+				$.ajax({
+					type:'POST',
+					url:'/api/V1.0/pairs/apply?id=&applicant_name=',
+				})//TODO ???id填哪用户名填哪
+				window.location.href=''//跳转去该配对的detail页面
+			}		
 	</script>
 </html>
