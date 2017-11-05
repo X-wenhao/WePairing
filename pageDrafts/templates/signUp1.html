@@ -115,6 +115,25 @@
 		  	password:'',
 		  	verification_code:''
 		  }
+		  method:{
+		   sendVerification_code: function (mailAddress) {
+				$.ajax({
+						type:'POST',
+						url:'/api/V1.0/user/send_mail&mail='+mailAddress,
+					}
+					.done(function(data) {
+						if (data=1) {
+							alert('发送成功');
+						}
+						else{
+							alert('发送失败，请检查邮箱填写');
+						}
+					})
+				}
+		  }
+
+	}
+
 		});
 	function signUp(argument) {
 		$.ajax({
@@ -129,28 +148,12 @@
 			}
 			.done(function(data) {
 				if(data=1){
-					window.location.href='  ';//跳转到的页面地址
+					window.location.href='/signUp2';//跳转
 				}
 				else{alert('验证码不对。检查一下？')}
 			})
 			)
 		}
-	}
-	$.ajax({
-				type:'POST',
-				url:'/api/V1.0/user/send_mail&mail=',
-			}//邮箱地址怎么填
-			.done(function(data) {
-				if (data=1) {
-					alert('发送成功');
-				}
-				else{
-					alert('发送失败，请检查邮箱填写');
-				}
-			})
-		}
-	function sendVerification_code(mailAddress) {
-
 	}
 
 

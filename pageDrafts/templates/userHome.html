@@ -220,9 +220,20 @@
 			routineDetails.information=getUserDataViaAJAX();
 				
 			function seeDetails(pairId) {
+				$.ajax({
+					type:'GET',
+					url:'/api/V1.0/pairs/get_pair?id='+pairId,
+					dataType:'json'
+				})
+				.done(function (data) {
 
+				})	
+
+
+				window.location.href='/detail?id='+pairId;
 				//跳转到显示某配对的detail页面。配对的id为传入的参数
 			}
+
 
 	</script>
 

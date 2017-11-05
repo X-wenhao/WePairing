@@ -203,9 +203,18 @@
 		function joinPair(pairId) {
 				$.ajax({
 					type:'POST',
-					url:'/api/V1.0/pairs/apply?id=&applicant_name=',
-				})//TODO ???id填哪用户名填哪
-				window.location.href=''//跳转去该配对的detail页面
+					url:'/api/V1.0/pairs/apply?id='+pairId+'&applicant_name=',
+				})
+				.done(function(data){
+					if (data=1) {
+						alert("加入成功！");
+					}
+					else{
+						alert("加入失败");
+					}
+				}
+					)
+				}
 			}		
 	</script>
 </html>
