@@ -75,11 +75,12 @@ def api_login():
 
     sql='select password from users where mail="{}"'.format(args['mail'])
     db=sqlite3.connect(dbdir)
-    hashed_pwd=db.execute(sql).fetchone()
+    hashed_pwd=db.execute(sql).fetchone()[0]
+    print(hashed_pwd)
 
     if not hashed_pwd:
         return jsonify({'result':0})
-    if not hashed_pwd!=args['password']:
+    if hashed_pwd!=args['password']:
         return jsonify({'result': 0})
 
     httpauth.login_user(args['mail'])

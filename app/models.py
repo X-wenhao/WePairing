@@ -1,5 +1,5 @@
 from functools import wraps
-from flask import session,jsonify,abort
+from flask import session,jsonify,abort,redirect,url_for
 import hashlib
 import sqlite3
 #from . import dbdir
@@ -25,7 +25,7 @@ class HttpAuth(object):
             else:
                 print(session.get('mail'))
                 print('has not login')
-                abort(401)
+                return redirect(url_for("pair.signIn"))
         return decorated
 
     def login_user(self,mail):
@@ -33,7 +33,8 @@ class HttpAuth(object):
 
         session['mail']=mail
         db=sqlite3.connect(dbdir)
-        name=db.execute('select name from users where mail="{}"'.format(mail)).fetchone()
+        name=db.execute('select name from users where mail="{}"'.format(mail)).fetchone()[0]
+        print(name)
         session['name']=name
         db.close()
 

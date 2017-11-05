@@ -121,8 +121,8 @@
 
 				 -->
 				<div class="pieces">
-					<div class="topLayer">
-						<a v-on:click="showDetails(item.id)"><i v-on:click="applyToJoin(item.id)" class="icon-plus"></i></a>
+					<div  v-on:click="showDetails(item.id)" class="topLayer">
+						<a v-on:click="applyToJoin(item.id)" ><i class="icon-plus"></i></a>
 					</div>
 					<img src="../static/img/face.jpg" alt="头头头头">
 					<strong>{{item.location}}	 {{item.time}} </strong>
@@ -188,7 +188,7 @@
 						seeDetails(pairId);
 						}
 					}
-				}
+				
 			})
 
 		function getPairsViaAJAX() {
@@ -234,7 +234,7 @@
 
 				})	
 
-
+                console.log('seeDetails')
 				window.location.href='/detail?id='+pairId;
 				//跳转到显示某配对的detail页面。配对的id为传入的参数
 			}		

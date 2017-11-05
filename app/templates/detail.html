@@ -157,23 +157,25 @@
 				dataType:'json'
 			})
 			.done(function (data) {
-				// console.log(data);
+				 console.log(data);
+				 pairDetails.information=data;
 				return data;
 			})
 		};
 		function getMemberDataViaAJAX(){
 			$.ajax({
 				type:'GET',
-				url:'/api/V1.0/pairs/get_users',
+				url:'/api/V1.0/pairs/get_users?id='+location.search.substring(4),
 				dataType:'json'
 			})
 			.done(function (data) {
-				// console.log(data);
+				 console.log(data);
+				memberDetails.items=data;
 				return data;
 			})
 		}
-		pairDetails.information=getPairDataViaAJAX();
-		memberDetails.items=getMemberDataViaAJAX();
+		getPairDataViaAJAX();
+		getMemberDataViaAJAX();
 		//成功则显示后台数据
 
 	</script>
