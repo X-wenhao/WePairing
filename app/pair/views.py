@@ -22,6 +22,7 @@ def api_release_quick_pair():
         return jsonify({'result': 0})
 
     pair=dict(args)
+
     pair['time'] = time.strftime("%Y-%m-%d %X")
     pair['name']=name
     pair['result']=[]
@@ -116,15 +117,16 @@ def api_release_pair():
 
     args = request.get_json()
     keys = ['time', 'location', 'people_max','description']
+    print(args)
     if list(args.keys()) != keys:
         return jsonify({'result': 0})
 
     db=sqlite3.connect(dbdir)
 
-    sql='insert into pairs(name,time,location,people_max,description,release_time)' \
-        'values("{}","{}","{}","{}","{}","{}")'\
+    sql='insert into pairs(name,time,location,people_max,description,release_time,people_current)' \
+        'values("{}","{}","{}","{}","{}","{}",{})'\
         .format(name,args['time'],args['location'],args['people_max'],
-                args['description'],time.strftime("%Y-%m-%d %H:%M"))
+                args['description'],time.strftime("%Y-%m-%d %H:%M"),0)
     db.execute(sql)
     db.commit()
     db.close()
@@ -235,19 +237,38 @@ def api_apply():
     applicant_name=request.args.get('applicant_name')
     if not applicant_name:
         applicant_name=session.get('name')
+    if not applicant_name:
+        applicant_name=session.get('name')
     if not id or not applicant_name:
         return jsonify({'result': 0})
 
+    print('apply.....')
+    print(applicant_name)
+
     db = sqlite3.connect(dbdir)
 
-    sql = 'select name,applicant from pairs ' \
+    sql = 'select name,applicant,people_current,people_max from pairs ' \
           'where id=' + id
+    print(sql)
     data = list(db.execute(sql).fetchone())
 
-    changed_applicants =data[1]+' applicant_name'
-    sql = "update pairs set applicants={} where id={}"\
-        .format(changed_applicants, id)
+    if data[2]>=data[3]:
+        return jsonify({'result':2})
+
+    if applicant_name in data[1].split():
+        return jsonify({'result':1})
+
+    changed_applicants =data[1]+" "+applicant_name
+    if not data[2]:
+        data[2]=1
+    else:
+        changed_curent=data[2]+1
+
+    sql = 'update pairs set applicant="{}",people_current={} where id={}'\
+        .format(changed_applicants,changed_curent, id)
     db.execute(sql)
+
+    db.commit()
 
     db.close()
 
