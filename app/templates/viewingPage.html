@@ -122,14 +122,14 @@
 				 -->
 				<div class="pieces">
 					<div class="topLayer">
-						<a href=""><i class="icon-plus"></i></a>
+						<a v-on:click="applyToJoin(item.id)"><i class="icon-plus"></i></a>
 					</div>
 					<img src="" alt="头头头头">
 					<strong>{{item.location}}	 {{item.time}} </strong>
 					<div id="details">
 						<span><i class="icon-user"></i>{{item.people_current}}/{{item.people_max}}人</span>
 						<br>
-						<span><i class="icon-time"></i>{{item.release_time}}</span>	
+						<span><i class="icon-time"></i>{{item.time}}</span>	
 					</div>
 					<p>补充说明：{{item.description}}</span>
 				</div>
@@ -140,7 +140,16 @@
 	
 </body>
 	<script>
-		$("#navLoader").load( "./navTemplates.html" );
+		// $("#navLoader").load( "./navTemplates.html" );
+		$.ajax({
+    	url: "./navTemplates.html",
+	    cache: false,
+	    dataType: "html",
+   		success: function(data) {
+        $("#navLoader").html(data);
+
+    }
+});
 	</script>	
 	<script>
 		var example1 = new Vue({
@@ -166,22 +175,37 @@
 						}						
 
 					]
+				},
+				methods:{
+					applyToJoin:function(pairId){
+						joinPair(pairId);
+
+					}
 				}
 			})
 
-		function getDataViaAJAX() {
+		function getPairsViaAJAX() {
 			$.ajax({
 				type:'GET',
 				url:'/api/V1.0/pairs/get_pairs',
 				dataType:'json'
 			})
 			.done(function (data) {
-				console.log(data);
-				example1.items=data;
+				//console.log(data);
+				return data;
 			})
-			
 		};
-		getDataViaAJAX();//成功则显示后台数据
-				
+		
+
+		example1.items=getPairsViaAJAX();//成功则页面上显示后台读取得的数据
+		
+
+		function joinPair(pairId) {
+				$.ajax({
+					type:'POST',
+					url:'/api/V1.0/pairs/apply?id=&applicant_name=',
+				})//TODO ???id填哪用户名填哪
+				window.location.href=''//跳转去该配对的detail页面
+			}		
 	</script>
 </html>

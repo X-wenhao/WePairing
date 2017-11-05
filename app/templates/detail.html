@@ -156,9 +156,9 @@
 				dataType:'json'
 			})
 			.done(function (data) {
-				console.log(data);
+				// console.log(data);
+				return data;
 			})
-			return data;
 		};
 		function getMemberDataViaAJAX(){
 			$.ajax({
@@ -167,9 +167,9 @@
 				dataType:'json'
 			})
 			.done(function (data) {
-				console.log(data);
+				// console.log(data);
+				return data;
 			})
-			return data;
 		}
 		pairDetails.information=getPairDataViaAJAX();
 		memberDetails.items=getMemberDataViaAJAX();

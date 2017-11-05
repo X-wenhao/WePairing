@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>signIn</title>
+	<title>signUp2</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="../static/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,6 +61,20 @@
 		border: none;
 		height: 50px;
 		margin-right: 20px;
+		display: inline-block;
+	}
+	#userLocation input{
+		width: 50px;
+	}
+	#gender {
+	}
+	#gender input{
+		margin: 5px;
+		height: 25px;
+	}
+	#gender label{
+		font-size: 15px;
+		color: rgb(117,117,117);
 	}
 	button{
 		margin-top: 40px;
@@ -93,33 +107,69 @@
 				
 			<form action="">
 					
-				<i class="icon-user"></i><input type="text" placeholder="姓名">
+				<i class="icon-user"></i><input v-model="name" type="text" placeholder="姓名">
 				<hr>
-				<i class="icon-male"></i><i class="icon-female"></i><input type="s" placeholder="性别">
+
+				<div id="gender">
+					<i class="icon-male"></i><i class="icon-female"></i><input v-model="gender" type="radio" value="man"> <label for="man">男</label> <input  v-model="gender" type="radio" value="woman"> <label for="woman">女</label>
+				</div>
+
 				<hr>
-					
-				<!-- <i class="icon-lock"></i><input type="password" placeholder="密码"> -->
-				<!-- <hr> -->
-				
-				<!-- <i class="icon-lock"></i><input type="password" placeholder="确认密码"> -->
-				<!-- <hr> -->
-				<i class="icon-map-marker"></i><input type="text" placeholder="学校 专业 年级">
+				<div id="userLocation">
+					<i class="icon-map-marker"></i><input v-model="school" type="text" placeholder="学校"><input v-model="major" placeholder="专业" type="text"><input v-model="grade" placeholder="年级" type="text">
+				</div>
 				<hr>
-				<i class="icon-book"></i><input type="text" placeholder="擅长科目">
+				<i class="icon-book"></i><input v-model="good_at" type="text" placeholder="擅长科目">
 				<hr>
 			
-				<button>完成</button>
+				<button type="button" onclick="signUp2()">完成</button>
 				
 			
 			</form>
 		</div>
 		<p>Not registered yet?
 		<br>Please <a href="">Sign up</a></p>
-
+	
 	</div>
 
 
 	
 </body>
+<script>
+		var formData=new Vue({
+		  el: 'form',
+		  data: {
+		  	name:'',
+    		school:'',
+ 		    grade:'',
+   			major:'',
+   		    gender:'',  //man or woman
+   			good_at:''
+		  }
+		});
+		function signUp2(argument) {
+		$.ajax({
+				type:'POST',
+				url:'/api/V1.0/user/set_info？mail=',
+				data:{	
+				  	name:formData.name,
+		    		school:formData.shool,
+		 		    grade:formData.grade,
+		   			major:formData.major,
+		   		    gender:formData.gender,  //man or woman
+		   			good_at:formData.good_at
 
+				}
+				dataType:'json'
+			}
+			.done(function(data) {
+				if(data=1){
+					window.location.href='  ';//跳转到的页面地址
+				}
+				else{alert('设置失败。请填写完整信息')}
+			})
+			)
+		}
+	}
+</script>
 </html>

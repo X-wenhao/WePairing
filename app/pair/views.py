@@ -5,10 +5,12 @@ from flask_mail import Message
 import sqlite3
 import time
 
+
 quick_pairs_pool={}
 divided_pairs_pool={}
 
 @pair.route('/api/V1.0/quick_pairs/release_pair',methods=['POST'])
+@httpauth.login_required
 def api_release_quick_pair():
     name=request.args.get('name')
     if not name:
@@ -34,6 +36,7 @@ def api_release_quick_pair():
     return jsonify({'result':1})
 
 @pair.route('/api/V1.0/quick_pairs/get_users',methods=['GET'])
+@httpauth.login_required
 def api_get_users():
     name = request.args.get('name')
     if not name or quick_pairs_pool.get(name) is None\
@@ -73,6 +76,7 @@ def asnyc_pairing():
         time.sleep(5)
 
 @pair.route('/api/V1.0/quick_pairs/send_result',methods=['POST'])
+@httpauth.login_required
 def api_send_result():
     name = request.args.get('name')
     if not name:
@@ -101,8 +105,11 @@ def api_send_result():
     return jsonify({'result':1})
 
 @pair.route('/api/V1.0/pairs/release_pair',methods=['POST'])
+@httpauth.login_required
 def api_release_pair():
     name = request.args.get('name')
+    if not name:
+        name=session.get('name')
     if not name:
         return jsonify({'result': 0})
 
@@ -124,6 +131,7 @@ def api_release_pair():
     return jsonify({'result': 1})
 
 @pair.route('/api/V1.0/pairs/get_pairs',methods=['GET'])
+@httpauth.login_required
 def api_get_pairs():
     sql='select id, name,time,location,people_max,people_current,description,release_time from pairs'
     type=request.args.get('type')
@@ -138,6 +146,7 @@ def api_get_pairs():
     return jsonify(re)
 
 @pair.route('/api/V1.0/pairs/get_pair',methods=['GET'])
+@httpauth.login_required
 def api_get_pair():
     id=request.args.get('id')
     if not id:
@@ -151,6 +160,7 @@ def api_get_pair():
     return jsonify(re)
 
 @pair.route('/api/V1.0/pairs/get_users',methods=['GET'])
+@httpauth.login_required
 def api_get_users_1():
     id = request.args.get('id')
     if not id :
@@ -181,6 +191,7 @@ def api_get_users_1():
     return jsonify(re)
 
 @pair.route('/api/V1.0/pairs/send_result',methods=['POST'])
+@httpauth.login_required
 def api_send_result_1():
     id = request.args.get('id')
     if not id:
@@ -217,9 +228,12 @@ def api_send_result_1():
     return jsonify({'result': 1})
 
 @pair.route('/api/V1.0/pairs/apply',methods=['POST'])
+@httpauth.login_required
 def api_apply():
     id = request.args.get('id')
     applicant_name=request.args.get('applicant_name')
+    if not applicant_name:
+        applicant_name=session.get('name')
     if not id or not applicant_name:
         return jsonify({'result': 0})
 
@@ -239,5 +253,38 @@ def api_apply():
     return jsonify({'result': 1})
 
 @pair.route('/viewingPage',methods=['GET'])
+@httpauth.login_required
 def viewingPage():
     return render_template('viewingPage.html')
+
+@pair.route('/detail',methods=['GET'])
+@httpauth.login_required
+def detail():
+    return render_template('detail.html')
+
+@pair.route('/info',methods=['GET'])
+@httpauth.login_required
+def info():
+    return render_template('info.html')
+
+@pair.route('/navTemplates',methods=['GET'])
+def nav():
+    return render_template('navTemplates.html')
+
+@pair.route('/signIn',methods=['GET'])
+def signIn():
+    return render_template('signIn.html')
+
+@pair.route('/signUp1',methods=['GET'])
+def signUp1():
+    return render_template('signUp1.html')
+
+@pair.route('/signUp2',methods=['GET'])
+@httpauth.login_required
+def signUp2():
+    return render_template('signUp2.html')
+
+@pair.route('/userHome',methods=['GET'])
+@httpauth.login_required
+def userHome():
+    return render_template('userHome.html')

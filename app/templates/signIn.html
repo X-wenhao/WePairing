@@ -70,14 +70,14 @@
 
 <body>
 	<div id="wrapper">	
-		<img id="logo" src="./logo.png">
+		<img id="logo" src="../static/img/logo.png">
 		<!-- <img id="backgroundImg" src="./signingPageBackground.png"> -->
 		<form action="">
-			<i class="icon-user"> </i> <input type="text" placeholder="Name">
+			<i class="icon-user"> </i> <input v-model="mail" type="text" placeholder="Name">
 			<hr>
-			<i class="icon-lock"> </i> <input type="password" placeholder="Password">
+			<i class="icon-lock"> </i> <input v-model="password" type="password" placeholder="Password">
 			<br>
-			<button>SIGN IN</button>
+			<button type="button" onclick="logIn">SIGN IN</button>
 		</form>
 		<p>Not registered yet?
 		<br>Please <a href="">Sign up</a></p>
@@ -87,5 +87,32 @@
 
 	
 </body>
-
+<script>
+		var formData=new Vue({
+		  el: 'form',
+		  data: {
+		  	mail:'',
+		  	password:''
+		  }
+		});
+	function logIn(argument) {
+		$.ajax({
+				type:'GET',
+				url:'/api/V1.0/user/login',
+				data:{	
+					mail:formData,mail,
+					password:formData.password
+				}
+				dataType:'json'
+			}
+			.done(function(data) {
+				if(data=1){
+					window.location.href='  ';//跳转到的页面地址
+				}
+				else{alert('密码不对。检查一下？')}
+			})
+			)
+		}
+	}
+</script>
 </html>

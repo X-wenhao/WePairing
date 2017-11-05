@@ -26,6 +26,7 @@ def api_register():
     sql='insert into users(mail,password)values({},{})'.format(args['mail'],hashed_pwd)
     db.execute(sql)
     db.close()
+    httpauth.login_user(args['mail'])
 
     return jsonify({'result':1})
 
@@ -76,8 +77,11 @@ def api_login():
 
 
 @auth.route('/api/V1.0/user/set_info',methods=['POST'])
+@httpauth.login_required
 def api_set_info():
     mail=request.args.get('mail')
+    if not mail:
+        mail=session.get('mail')
     if session.get('mail') != mail:
         return jsonify({"result":0})
 
@@ -99,8 +103,11 @@ def api_set_info():
 
 
 @auth.route('/api/V1.0/user/get_info',methods=['GET'])
+@httpauth.login_required
 def api_get_info():
     name=request.args.get('name')
+    if not name:
+        name=session.get('name')
     if not name:
         return jsonify({'result':0})
     args = request.get_json()
@@ -115,8 +122,11 @@ def api_get_info():
     return jsonify(re)
 
 @auth.route('/api/V1.0/user/get_pair_info',methods=["GET"])
+@httpauth.login_required
 def api_user_get_pair_info():
     name=request.args.get("name")
+    if not name:
+        name=session.get('name')
     if not name:
         return jsonify({"result":0})
 
