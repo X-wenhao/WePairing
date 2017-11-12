@@ -3,6 +3,8 @@
 
 # Python
 
+pip3 install -r requirements.txt
+
 # Back end
 ### 需要
 - 框架: flask
